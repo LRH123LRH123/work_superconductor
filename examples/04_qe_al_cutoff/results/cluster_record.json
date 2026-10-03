@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "job_id": "313292",
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "elapsed": "00:00:18",
+  "date": "2026-10-03",
+  "partition": "iq-main",
+  "mpi_ranks": 4,
+  "work_dir": "/home/runhan/work_superconductor_bdg_20261003/04_qe_al_cutoff",
+  "pseudopotential": {
+    "file": "Al.pbe-n-kjpaw_psl.1.0.0.UPF",
+    "sha256": "fd7b78921e6d0939095b681c328732668eaefd1dee6882fdbc03be463550cc97"
+  },
+  "files": [
+    {
+      "path": "ecut_30/output",
+      "sha256": "c11847ccf119eaad5e8003e94a07851ef1ce6454d26052f086c7046cb774d135",
+      "bytes": 22051
+    },
+    {
+      "path": "ecut_40/output",
+      "sha256": "b07a9cb91cf56c30bb601aa6a5d2ef80e0fd5b9299b0fd9c866e28faa48ae53a",
+      "bytes": 22051
+    },
+    {
+      "path": "ecut_50/output",
+      "sha256": "d5328ad9b08b19c9b302f372194b5c0ba380b4d6dcb6ade2c2cd22af4169f4da",
+      "bytes": 22051
+    },
+    {
+      "path": "ecut_60/output",
+      "sha256": "dc42574b0b30d1f78806a1882b4b0ae7de87508d0beac7374ff7de191ff3cd90",
+      "bytes": 22051
+    },
+    {
+      "path": "ecut_80/output",
+      "sha256": "801b822966772baffd0fd3b7e74843fad20c2eae319113f49a7cd68e9c8d2478",
+      "bytes": 22051
+    },
+    {
+      "path": "results/slurm-313292.out",
+      "sha256": "2b7fbf52c4f8e5be1110727f97ba636db1c5d4d9bfe7c1aa2119fe2c14b06c2b",
+      "bytes": 2034
+    },
+    {
+      "path": "submit.sh",
+      "sha256": "cec0c7f4feeebf62eebdcdf79f2260d1178bdc1e02c8f36f9b9af0881ef9a24b",
+      "bytes": 850
+    },
+    {
+      "path": "ecut_30/scf.in",
+      "sha256": "9c1321bc44c17799c915358a8925796b7998b2c61e4c7e712d2e7a08f3f2399d",
+      "bytes": 439
+    },
+    {
+      "path": "ecut_40/scf.in",
+      "sha256": "def8efb670f4a21a5fcff5859faf2a4572304f95f88ac0dcda5750fe9c3c51d2",
+      "bytes": 439
+    },
+    {
+      "path": "ecut_50/scf.in",
+      "sha256": "bb47e8834d1d9c52561007cd935b7c490defa487f9be35e6f26ea6efa7fd8e26",
+      "bytes": 439
+    },
+    {
+      "path": "ecut_60/scf.in",
+      "sha256": "826634d09b5fb5a7ea6335b1c97f4babb9331bdc5fdd266a502c8c3dc167db20",
+      "bytes": 439
+    },
+    {
+      "path": "ecut_80/scf.in",
+      "sha256": "d67b7271e71b19156d16917318d293f9117e5f75445c66939c1071592344c34f",
+      "bytes": 439
+    }
+  ]
+}

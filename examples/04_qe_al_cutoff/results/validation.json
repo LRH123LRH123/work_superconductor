@@ -1,0 +1,114 @@
+{
+  "reference_ecutwfc_Ry": 80,
+  "tolerance_meV_per_atom": 1.0,
+  "lowest_tested_acceptable_Ry": 30,
+  "rows": [
+    {
+      "ecutwfc_Ry": 30,
+      "energy_Ry": -39.50300654,
+      "fermi_eV": 7.8175,
+      "pressure_kbar": -8.13,
+      "iterations": 5,
+      "difference_meV_per_atom": 0.7933479660018599,
+      "abs_difference_meV_per_atom": 0.7933479660018599
+    },
+    {
+      "ecutwfc_Ry": 40,
+      "energy_Ry": -39.50303898,
+      "fermi_eV": 7.8174,
+      "pressure_kbar": -8.19,
+      "iterations": 5,
+      "difference_meV_per_atom": 0.35197928111579757,
+      "abs_difference_meV_per_atom": 0.35197928111579757
+    },
+    {
+      "ecutwfc_Ry": 50,
+      "energy_Ry": -39.50305397,
+      "fermi_eV": 7.8173,
+      "pressure_kbar": -8.1,
+      "iterations": 5,
+      "difference_meV_per_atom": 0.14802994114859544,
+      "abs_difference_meV_per_atom": 0.14802994114859544
+    },
+    {
+      "ecutwfc_Ry": 60,
+      "energy_Ry": -39.5030599,
+      "fermi_eV": 7.8173,
+      "pressure_kbar": -8.13,
+      "iterations": 5,
+      "difference_meV_per_atom": 0.06734818102080073,
+      "abs_difference_meV_per_atom": 0.06734818102080073
+    },
+    {
+      "ecutwfc_Ry": 80,
+      "energy_Ry": -39.50306485,
+      "fermi_eV": 7.8173,
+      "pressure_kbar": -8.1,
+      "iterations": 5,
+      "difference_meV_per_atom": 0.0,
+      "abs_difference_meV_per_atom": 0.0
+    }
+  ],
+  "scope": "One atom per cell; fixed ecutrho, k mesh, smearing, geometry and pseudo",
+  "limitation": "Finite-reference total-energy criterion only; not phonon, EPC or Tc convergence",
+  "job_id": "313292",
+  "date": "2026-10-03",
+  "fixed_parameters": {
+    "ecutrho_Ry": 640,
+    "k_mesh": [
+      8,
+      8,
+      8
+    ],
+    "k_shift": [
+      1,
+      1,
+      1
+    ],
+    "smearing": "mv",
+    "degauss_Ry": 0.02,
+    "nat": 1
+  },
+  "sha256": [
+    {
+      "path": "ecut_30/scf.in",
+      "sha256": "9c1321bc44c17799c915358a8925796b7998b2c61e4c7e712d2e7a08f3f2399d"
+    },
+    {
+      "path": "ecut_30/output",
+      "sha256": "c11847ccf119eaad5e8003e94a07851ef1ce6454d26052f086c7046cb774d135"
+    },
+    {
+      "path": "ecut_40/scf.in",
+      "sha256": "def8efb670f4a21a5fcff5859faf2a4572304f95f88ac0dcda5750fe9c3c51d2"
+    },
+    {
+      "path": "ecut_40/output",
+      "sha256": "b07a9cb91cf56c30bb601aa6a5d2ef80e0fd5b9299b0fd9c866e28faa48ae53a"
+    },
+    {
+      "path": "ecut_50/scf.in",
+      "sha256": "bb47e8834d1d9c52561007cd935b7c490defa487f9be35e6f26ea6efa7fd8e26"
+    },
+    {
+      "path": "ecut_50/output",
+      "sha256": "d5328ad9b08b19c9b302f372194b5c0ba380b4d6dcb6ade2c2cd22af4169f4da"
+    },
+    {
+      "path": "ecut_60/scf.in",
+      "sha256": "826634d09b5fb5a7ea6335b1c97f4babb9331bdc5fdd266a502c8c3dc167db20"
+    },
+    {
+      "path": "ecut_60/output",
+      "sha256": "dc42574b0b30d1f78806a1882b4b0ae7de87508d0beac7374ff7de191ff3cd90"
+    },
+    {
+      "path": "ecut_80/scf.in",
+      "sha256": "d67b7271e71b19156d16917318d293f9117e5f75445c66939c1071592344c34f"
+    },
+    {
+      "path": "ecut_80/output",
+      "sha256": "801b822966772baffd0fd3b7e74843fad20c2eae319113f49a7cd68e9c8d2478"
+    }
+  ]
+}

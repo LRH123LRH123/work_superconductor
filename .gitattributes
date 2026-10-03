@@ -6,3 +6,7 @@ resources/mit_ocw/*.pdf binary
 slides/*.pptx binary
 slides/*.pdf binary
 slides/*.png binary
+examples/04_qe_al_cutoff/*.sh text eol=lf
+examples/04_qe_al_cutoff/ecut_*/*.in text eol=lf
+examples/04_qe_al_cutoff/ecut_*/output -text
+examples/04_qe_al_cutoff/results/* -text

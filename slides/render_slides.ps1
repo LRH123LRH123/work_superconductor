@@ -13,7 +13,8 @@ try {
     # WithWindow=false keeps the export non-interactive.
     $presentation = $app.Presentations.Open($Deck, $true, $false, $false)
     $presentation.Export($OutDir, 'PNG', 1600, 900)
-    $presentation.SaveAs((Join-Path $OutDir 'BCS超导理论与计算入门.pdf'), 32)
+    $pdfName = [System.IO.Path]::GetFileNameWithoutExtension($Deck) + '.pdf'
+    $presentation.SaveAs((Join-Path $OutDir $pdfName), 32)
     Write-Output ('Rendered slides: ' + $presentation.Slides.Count)
 }
 finally {

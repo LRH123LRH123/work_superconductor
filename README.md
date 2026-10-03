@@ -4,8 +4,8 @@ Superconductivity: Theory, Computation and Literature Reproduction
 
 本仓库用于积累超导体的理论学习笔记、计算方法、文献阅读记录与可复现案例。内容以中文为主，保留英文概念名称，覆盖声子介导与非声子候选机制，并逐步连接模型计算和真实材料计算。
 
-当前已有**详细 BCS 中文入门教程、可运行 Python、执行过的交互 Notebook、33 页配套 PPTX 和数值验证**，
-以及参考 HostBridge 在 IQ 集群完成的 **Al SCF + Γ 点 DFPT + ASR 冒烟测试**。
+当前已有 **BCS 与 BdG 两套详细中文教程、Python、已执行 Notebook、配套 PPTX/PDF 和数值验证**，
+以及参考 HostBridge 在 IQ 集群完成的 **Al SCF + Γ 点 DFPT + ASR 冒烟测试与波函数截断能扫描**。
 已保存输入、小型原始日志、版本和 JobID。**尚未完成全 EPC/Tc 材料预测或原论文定量图表复现。**
 
 ## 第一套学习包
@@ -23,7 +23,21 @@ Superconductivity: Theory, Computation and Literature Reproduction
 推荐顺序：先看课件结构，读 BCS 推导，运行 Notebook，独立重建并检验结果，
 最后阅读 Al 集群日志。第一次的目标是完成一个“理论 → 代码 → 验证 → 解释”的小闭环。
 
-## 从这里开始
+## 第二套学习包
+
+| 材料 | 入口 | 完成状态 |
+|---|---|---|
+| BdG 详细教程 | [BdG 理论与计算入门](examples/03_bdg_uniform/BdG理论与计算入门教程.md) | 基底、推导、边界、LDOS、练习与答案 |
+| 代码与验证 | [BdG 案例](examples/03_bdg_uniform/README.md) | 11 项测试，解析误差约 10^-15 |
+| 交互练习 | [BdG Notebook](examples/03_bdg_uniform/BdG入门交互教程.ipynb) | 8 个代码单元已执行 |
+| 配套课件 | [30 页 PPTX](slides/BdG超导理论与计算入门.pptx) / [PDF](slides/BdG超导理论与计算入门.pdf) | 每页有中文讲解备注 |
+| 材料收敛 | [Al 截断能教程与实测记录](examples/04_qe_al_cutoff/Al截断能收敛教程与记录.md) | JobID 313292，5 组 SCF 均完成 |
+
+BdG 案例输入固定 Δ，不计算 Tc，也不是无自旋 Kitaev 链。
+Al 的 30 Ry 相对 80 Ry 总能差为 0.793 meV/原子，仅满足当前固定参数下的有限参考总能判据。
+**尚未完成 k 网格、展宽、ecutrho、有限 q 声子或 EPC/Tc 收敛。**
+
+## 学习导航
 
 | 目标 | 入口 | 当前内容 |
 |---|---|---|
@@ -47,6 +61,8 @@ reproductions/               每篇论文或基准问题的独立复现目录
 templates/                   阅读与复现模板
 examples/01_bcs_gap/          BCS 教程、代码、Notebook 与结果
 examples/02_qe_al_smoke/      Al SCF/Γ 声子/ASR 输入与实测记录
+examples/03_bdg_uniform/      固定均匀 s 波 BdG、LDOS 与解析验证
+examples/04_qe_al_cutoff/     Al 截断能扫描输入、原始日志与汇总
 slides/                      中文课件、讲解备注与生成源代码
 resources/                   许可明确的教材副本及来源清单
 ```
@@ -65,8 +81,9 @@ resources/                   许可明确的教材副本及来源清单
 
 - [x] 完成 BCS 自洽能隙方程的温度扫描与弱耦合极限验证。
 - [x] 完成 Al SCF、Γ 点 DFPT 与 ASR 集群冒烟测试。
-- [ ] 完成 Al 截止能、k 网格和 smearing 收敛，再转向有限 q。
-- [ ] 完成均匀 s 波 BdG 谱与解析解的比较。
+- [x] 完成 Al ecutwfc 单变量扫描及有限参考总能误差分析。
+- [ ] 继续 Al k 网格、smearing、ecutrho 与几何验证，再转向有限 q。
+- [x] 完成均匀 s 波 BdG 谱、LDOS 与解析解的比较。
 - [ ] 按 EPW 官方教程开展 Pb/MgB2 计算，记录网格和展宽收敛。
 - [ ] 建立二维 Hubbard 模型的正常态易感率与配对通道练习。
 - [ ] 选定一篇原始论文和一个具体图/表，建立首个文献复现目录。

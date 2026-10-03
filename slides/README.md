@@ -1,4 +1,19 @@
-# BCS 超导理论与计算入门课件
+# 超导理论与计算入门课件
+
+## 第二课：BdG
+
+[30 页 PPTX](BdG超导理论与计算入门.pptx) · [PDF](BdG超导理论与计算入门.pdf) · [详细教程](../examples/03_bdg_uniform/BdG理论与计算入门教程.md) · [已执行 Notebook](../examples/03_bdg_uniform/BdG入门交互教程.ipynb)
+
+每页有中文讲解备注。内容为固定均匀 s 波自旋单态约化块、边界、LDOS 和真实 Al 截断能扫描。
+不包含自洽 Δ、拓扑计算或材料 Tc 预测。图片由本仓库程序生成，文字与示意元素可编辑；
+完整公式推导见 Markdown 教程。Kwant 官方教程仅作为后续链接，不复制其输运结果。
+
+先运行 examples/03_bdg_uniform/run_bdg.py 与 examples/04_qe_al_cutoff/collect_results.py，
+然后在本目录执行 npm run build:bdg。
+依赖与字体要求同下方 BCS，另使用 Consolas 显示代码。
+原生 PowerPoint 的渲染、备注、结构与版面检查见 [BdG 课件检查记录](BdG课件检查记录.md)。
+
+## 第一课：BCS
 
 [打开 PPTX](BCS超导理论与计算入门.pptx) · [PDF 阅读版](BCS超导理论与计算入门.pdf) · [中文教程](../examples/01_bcs_gap/BCS理论与计算入门教程.md) · [交互练习](../examples/01_bcs_gap/BCS入门交互教程.ipynb)
 

@@ -1,0 +1,43 @@
+JobID=313292
+WorkDir=/home/runhan/work_superconductor_bdg_20261003/04_qe_al_cutoff
+
+Currently Loaded Modules:
+  1) CCconfig                         14) ucx/1.14.1
+  2) gentoo/2023              (S)     15) libfabric/1.18.0
+  3) imkl/2023.2.0            (math)  16) pmix/4.2.4
+  4) StdEnv/2023              (S)     17) ucc/1.2.0
+  5) mii/1.1.2                        18) openmpi/4.1.5       (m)
+  6) slurm-completion/23.02.7         19) fftw/3.3.10         (math)
+  7) libcerf/2.4              (math)  20) fftw-mpi/3.3.10     (math)
+  8) qt/5.15.11               (t)     21) scalapack/2.2.0     (math)
+  9) gnuplot/5.4.8            (vis)   22) hdf5-mpi/1.14.2     (io)
+ 10) gcc/12.3                 (t)     23) elpa/2023.05.001    (math)
+ 11) flexiblas/3.3.1                  24) libxc/6.2.2         (chem)
+ 12) gcccore/.12.3            (H)     25) quantumespresso/7.5 (chem)
+ 13) hwloc/2.9.1
+
+  Where:
+   H:     Hidden Module
+   S:     Module is Sticky, requires --force to unload or purge
+   chem:  Chemistry libraries/apps / Logiciels de chimie
+   io:    Input/output software / Logiciel d'écriture/lecture
+   m:     MPI implementations / Implémentations MPI
+   math:  Mathematical libraries / Bibliothèques mathématiques
+   t:     Tools for development / Outils de développement
+   vis:   Visualisation software / Logiciels de visualisation
+
+ 
+
+/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/MPI/gcc12/openmpi4/quantumespresso/7.5/bin/pw.x
+fd7b78921e6d0939095b681c328732668eaefd1dee6882fdbc03be463550cc97  /home/runhan/apps/qesssp/Al.pbe-n-kjpaw_psl.1.0.0.UPF
+9c1321bc44c17799c915358a8925796b7998b2c61e4c7e712d2e7a08f3f2399d  scf.in
+ECUT_30_OK
+def8efb670f4a21a5fcff5859faf2a4572304f95f88ac0dcda5750fe9c3c51d2  scf.in
+ECUT_40_OK
+bb47e8834d1d9c52561007cd935b7c490defa487f9be35e6f26ea6efa7fd8e26  scf.in
+ECUT_50_OK
+826634d09b5fb5a7ea6335b1c97f4babb9331bdc5fdd266a502c8c3dc167db20  scf.in
+ECUT_60_OK
+d67b7271e71b19156d16917318d293f9117e5f75445c66939c1071592344c34f  scf.in
+ECUT_80_OK
+AL_WAVEFUNCTION_CUTOFF_SCAN_OK

@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-03",
+  "model": "Fixed-gap spin-singlet reduced BdG block, not a spinless Kitaev model",
+  "parameters": {
+    "N": 48,
+    "hopping_J": 1.0,
+    "mu_over_J": -0.5,
+    "Delta_over_J": 0.25,
+    "eta_over_J": 0.04
+  },
+  "momentum_spectrum_max_error": 8.881784197001252e-16,
+  "chain_spectrum_max_errors": {
+    "periodic": 1.7763568394002505e-15,
+    "open": 1.7763568394002505e-15
+  },
+  "hermiticity_max_error": 0.0,
+  "reduced_particle_hole_max_error": 0.0,
+  "paired_spectrum_max_error": 1.6653345369377348e-15,
+  "eigenvector_orthonormality_max_error": 1.7763568394002505e-15,
+  "eigenvector_residual_max_error": 1.2698175844150228e-15,
+  "single_spin_completeness_max_error": 1.7763568394002505e-15,
+  "finite_window_weight_open_center": 0.9869219999762344,
+  "minimum_positive_open_energy": 0.2559695221750683,
+  "minimum_positive_impurity_energy": 0.2540643593854445,
+  "versions": {
+    "python": "3.12.4",
+    "numpy": "1.26.4",
+    "matplotlib": "3.8.4"
+  },
+  "interpretation": "No gap self-consistency, Tc, transport, or topological invariant. Finite-window LDOS misses Lorentzian tails."
+}
