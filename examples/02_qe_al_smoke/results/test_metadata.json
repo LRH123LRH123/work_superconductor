@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-03",
+  "type": "SCF + Gamma DFPT + ASR smoke test only",
+  "work_dir": "/home/runhan/work_superconductor_bcs_20261003/02_qe_al_smoke",
+  "jobs": [
+    {
+      "job_id": "313274",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:00:13"
+    },
+    {
+      "job_id": "313279",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:00:04"
+    }
+  ],
+  "qe_version": "7.5",
+  "input_sha256": {
+    "scf.in": "f0b2e07d87046e616faccac1ea1ea534e4515351e052f1e56197083c0cccd479",
+    "ph.in": "d36513cf64551b42dc5777ecbc46b0fb48f488e7f86643dd95782adeda4f61a4",
+    "dynmat.in": "8324bc3b17d2e87c8c08522b0f82371dc3e481d9a34ac52a233746667e12b519"
+  },
+  "pseudo_sha256": "fd7b78921e6d0939095b681c328732668eaefd1dee6882fdbc03be463550cc97",
+  "cluster_source_files": [
+    {
+      "file": "output",
+      "source_sha256": "d7f57c2bedbd01c5019cfbb20762c013a09721d33b0603e3a0e1a53bfc4e31a2"
+    },
+    {
+      "file": "phonon.output",
+      "source_sha256": "43578e79ca05fc73ffe275b60f3a91f743a19fa854860f4df19d83d522f58f71"
+    },
+    {
+      "file": "al.gamma.dyn",
+      "source_sha256": "ce71d284cfb57954e0786a54729e649e352ceb190a07e7bb5e8801c1be296b2b"
+    },
+    {
+      "file": "asr.output",
+      "source_sha256": "6784380d1a8f094baa4609e60c38e2ef69710b22e9cb5c309ebaf225a0576b1c"
+    },
+    {
+      "file": "al.gamma.asr.modes",
+      "source_sha256": "092b81349d7b5fe9dee91d2cac5684b40a3a62b49af1a9eb3ea73f9dc9b38ffb"
+    }
+  ],
+  "raw_gamma_cm_1": [
+    -3.374924,
+    -3.374924,
+    -3.374924
+  ],
+  "crystal_asr_cm_1": [
+    0,
+    0,
+    0
+  ],
+  "limits": "No convergence scan, full-q phonons, EPC, Eliashberg, or material Tc prediction."
+}

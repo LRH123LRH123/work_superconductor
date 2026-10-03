@@ -1,0 +1,8 @@
+# Preserve exact cluster inputs and captured source-log checksums across systems.
+examples/02_qe_al_smoke/*.sh text eol=lf
+examples/02_qe_al_smoke/*.in text eol=lf
+examples/02_qe_al_smoke/results/* -text
+resources/mit_ocw/*.pdf binary
+slides/*.pptx binary
+slides/*.pdf binary
+slides/*.png binary

@@ -1,0 +1,9 @@
+Al Gamma-point phonon smoke test
+&INPUTPH
+ prefix = 'al'
+ outdir = './scratch'
+ fildyn = 'al.gamma.dyn'
+ tr2_ph = 1.0d-12
+ ldisp = .false.
+/
+0.0 0.0 0.0

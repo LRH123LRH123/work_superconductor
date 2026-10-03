@@ -4,7 +4,24 @@ Superconductivity: Theory, Computation and Literature Reproduction
 
 本仓库用于积累超导体的理论学习笔记、计算方法、文献阅读记录与可复现案例。内容以中文为主，保留英文概念名称，覆盖声子介导与非声子候选机制，并逐步连接模型计算和真实材料计算。
 
-当前版本完成了学习框架、非声子机制综述整理和复现模板。**尚未提供可运行的计算案例或已经完成的论文复现结果。** 后续案例以实际验证记录为准。
+当前已有**详细 BCS 中文入门教程、可运行 Python、执行过的交互 Notebook、33 页配套 PPTX 和数值验证**，
+以及参考 HostBridge 在 IQ 集群完成的 **Al SCF + Γ 点 DFPT + ASR 冒烟测试**。
+已保存输入、小型原始日志、版本和 JobID。**尚未完成全 EPC/Tc 材料预测或原论文定量图表复现。**
+
+## 第一套学习包
+
+| 材料 | 入口 | 用法 |
+|---|---|---|
+| BCS 详细教程 | [BCS 理论与计算入门](examples/01_bcs_gap/BCS理论与计算入门教程.md) | 符号、假设、推导、算法、练习及答案 |
+| 可运行代码 | [BCS 案例入口](examples/01_bcs_gap/README.md) | 环境安装、生成图表、7 项检查 |
+| 交互学习 | [BCS Notebook](examples/01_bcs_gap/BCS入门交互教程.ipynb) | 已逐格执行，可修改参数 |
+| 配套课件 | [33 页 PPTX](slides/BCS超导理论与计算入门.pptx) | 中文为主，每页有讲解备注 |
+| 第一性原理 | [集群入门教程](examples/02_qe_al_smoke/第一性原理与集群入门.md) | 逐项解释 QE 输入、输出和收敛 |
+| 真实测试 | [Al 集群记录](examples/02_qe_al_smoke/集群测试记录.md) | JobID 313274 / 313279 均已完成 |
+| 开放教材 | [教材副本与复用说明](resources/开放教材与复用说明.md) | 两份 MIT OCW 原始 PDF，含许可与哈希 |
+
+推荐顺序：先看课件结构，读 BCS 推导，运行 Notebook，独立重建并检验结果，
+最后阅读 Al 集群日志。第一次的目标是完成一个“理论 → 代码 → 验证 → 解释”的小闭环。
 
 ## 从这里开始
 
@@ -28,6 +45,10 @@ docs/
 literature/                  文献索引与后续阅读笔记
 reproductions/               每篇论文或基准问题的独立复现目录
 templates/                   阅读与复现模板
+examples/01_bcs_gap/          BCS 教程、代码、Notebook 与结果
+examples/02_qe_al_smoke/      Al SCF/Γ 声子/ASR 输入与实测记录
+slides/                      中文课件、讲解备注与生成源代码
+resources/                   许可明确的教材副本及来源清单
 ```
 
 建议先完成 BCS 能隙方程与简单 BdG 的数值基准，再分流到 `DFT → DFPT → EPC → Eliashberg` 或 `Wannier → 相互作用模型 → 两粒子顶角 → 配对分析`。详细任务和验收点见学习路线。
@@ -42,7 +63,9 @@ templates/                   阅读与复现模板
 
 ## 近期任务
 
-- [ ] 完成 BCS 自洽能隙方程的温度扫描与弱耦合极限验证。
+- [x] 完成 BCS 自洽能隙方程的温度扫描与弱耦合极限验证。
+- [x] 完成 Al SCF、Γ 点 DFPT 与 ASR 集群冒烟测试。
+- [ ] 完成 Al 截止能、k 网格和 smearing 收敛，再转向有限 q。
 - [ ] 完成均匀 s 波 BdG 谱与解析解的比较。
 - [ ] 按 EPW 官方教程开展 Pb/MgB2 计算，记录网格和展宽收敛。
 - [ ] 建立二维 Hubbard 模型的正常态易感率与配对通道练习。

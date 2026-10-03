@@ -1,0 +1,5 @@
+&INPUT
+ fildyn='al.gamma.dyn'
+ asr='crystal'
+ filout='al.gamma.asr.modes'
+/

@@ -1,0 +1,8 @@
+# Versions validated for this example with Python 3.12.4.
+numpy==1.26.4
+scipy==1.13.1
+matplotlib==3.8.4
+nbformat==5.9.2
+nbclient==0.8.0
+jupyterlab>=4,<5
+ipykernel>=6,<7

@@ -1,0 +1,8 @@
+{
+  "name": "superconductor-bcs-learning-slides",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Original bilingual BCS teaching deck with speaker notes",
+  "scripts": { "build": "node build_bcs_deck.js" },
+  "dependencies": { "pptxgenjs": "4.0.1", "jszip": "3.10.1" }
+}

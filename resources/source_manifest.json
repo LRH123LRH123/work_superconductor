@@ -1,0 +1,31 @@
+{
+  "retrieved_date": "2026-10-03",
+  "license": "CC BY-NC-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "terms_url": "https://ocw.mit.edu/pages/privacy-and-terms-of-use/",
+  "scope": "Only the two MIT OCW PDFs listed here. Do not treat this as a repository-wide license.",
+  "files": [
+    {
+      "path": "mit_ocw/MIT_6_763_lecture19.pdf",
+      "title": "6.763 Applied Superconductivity, Fall 2005, Lecture 19",
+      "creator": "Terry P. Orlando",
+      "publisher": "MIT OpenCourseWare, Massachusetts Institute of Technology",
+      "source_page": "https://ocw.mit.edu/courses/6-763-applied-superconductivity-fall-2005/resources/lecture19/",
+      "download_url": "https://ocw.mit.edu/courses/6-763-applied-superconductivity-fall-2005/81df305f04c0c64bb427b03ea3a88389_lecture19.pdf",
+      "sha256": "e9ed4048ce59cd1a7b2f3882e28719ad150684eda0cda69dcbfa88f26cd7a345",
+      "bytes": 71604,
+      "changes": "None; original PDF redistributed."
+    },
+    {
+      "path": "mit_ocw/MIT_8_514_ps6.pdf",
+      "title": "8.514 Strongly Correlated Systems in Condensed Matter Physics, Fall 2003, Problem Set 6",
+      "creator": "Leonid Levitov",
+      "publisher": "MIT OpenCourseWare, Massachusetts Institute of Technology",
+      "source_page": "https://ocw.mit.edu/courses/8-514-strongly-correlated-systems-in-condensed-matter-physics-fall-2003/resources/ps6/",
+      "download_url": "https://ocw.mit.edu/courses/8-514-strongly-correlated-systems-in-condensed-matter-physics-fall-2003/18c3e8717576f6aa38b9812c0dd12396_ps6.pdf",
+      "sha256": "f55bcf08289c0a3a63e7dacd659ee2b26ced2c5406fd019c12bf89b8a1210890",
+      "bytes": 81792,
+      "changes": "None; original PDF redistributed."
+    }
+  ]
+}

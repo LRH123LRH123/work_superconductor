@@ -1,0 +1,19 @@
+{
+  "model": "constant single-spin DOS; symmetric cutoff; isotropic mean field",
+  "coupling_g": 0.3,
+  "cutoff_mev": 20.0,
+  "Delta0_over_Ec": 0.07143890225624669,
+  "kBTc_over_Ec": 0.040449525190890075,
+  "Tc_K_for_assumed_cutoff": 9.387944961715801,
+  "gap_ratio": 3.5322492374934455,
+  "weak_coupling_gap_ratio": 3.527753977724091,
+  "max_gap_residual_below_Tc": 3.872457909892546e-13,
+  "tc_relative_change_tolerance_1e6_to_1e10": 2.220446049250313e-16,
+  "versions": {
+    "python": "3.12.4",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "matplotlib": "3.8.4"
+  },
+  "interpretation": "Learning benchmark, not a material-specific Tc prediction or paper reproduction."
+}

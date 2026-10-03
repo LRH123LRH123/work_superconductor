@@ -1,0 +1,127 @@
+job_snapshot_version=1
+job_id=313274
+capture_started_at=2026-10-03T15:58:05Z
+budgets=overall:20s metadata:5s sacct:8s tail:2500B total:16000B
+@@ section=scontrol status=error collected_at=2026-10-03T15:58:05Z detail=exit-1
+[stderr]
+slurm_load_jobs error: Invalid job id specified
+
+@@ section=paths status=ok collected_at=2026-10-03T15:58:05Z
+workdir=/home/runhan/work_superconductor_bcs_20261003/02_qe_al_smoke
+workdir_source=provided
+stdout=/home/runhan/work_superconductor_bcs_20261003/02_qe_al_smoke/slurm-313274.out
+stdout_source=provided
+stdout_kind=concrete
+stderr=/home/runhan/work_superconductor_bcs_20261003/02_qe_al_smoke/slurm-313274.err
+stderr_source=provided
+stderr_kind=concrete
+primary_output=/home/runhan/work_superconductor_bcs_20261003/02_qe_al_smoke/output
+primary_output_source=provided
+primary_output_kind=concrete
+@@ section=squeue status=error collected_at=2026-10-03T15:58:05Z detail=exit-1
+[stderr]
+slurm_load_jobs error: Invalid job id specified
+
+@@ section=sacct status=ok collected_at=2026-10-03T15:58:05Z
+313274|COMPLETED|00:00:13|0:0|iq-main
+
+@@ section=primary_output_tail status=ok collected_at=2026-10-03T15:58:05Z detail=last-2500-bytes
+path=/home/runhan/work_superconductor_bcs_20261003/02_qe_al_smoke/output
+iting all to output data dir ./scratch/al.save/ :
+     XML data file, charge density, pseudopotentials, collected wavefunctions
+
+     init_run     :      0.57s CPU      0.68s WALL (       1 calls)
+     electrons    :      1.14s CPU      1.24s WALL (       1 calls)
+     forces       :      0.01s CPU      0.02s WALL (       1 calls)
+     stress       :      0.10s CPU      0.10s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.03s CPU      0.05s WALL (       1 calls)
+     potinit      :      0.31s CPU      0.33s WALL (       1 calls)
+     hinit0       :      0.21s CPU      0.27s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :      0.61s CPU      0.68s WALL (       6 calls)
+     sum_band     :      0.13s CPU      0.14s WALL (       6 calls)
+     v_of_rho     :      0.06s CPU      0.06s WALL (       6 calls)
+     newd         :      0.04s CPU      0.04s WALL (       6 calls)
+     PAW_pot      :      0.36s CPU      0.39s WALL (       6 calls)
+     mix_rho      :      0.00s CPU      0.00s WALL (       6 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.02s CPU      0.02s WALL (     900 calls)
+     cegterg      :      0.57s CPU      0.64s WALL (     360 calls)
+
+     Called by *egterg:
+     cdiaghg      :      0.05s CPU      0.06s WALL (    1366 calls)
+     h_psi        :      0.46s CPU      0.53s WALL (    1486 calls)
+     s_psi        :      0.01s CPU      0.01s WALL (    1486 calls)
+     g_psi        :      0.00s CPU      0.00s WALL (    1066 calls)
+
+     Called by h_psi:
+     h_psi:calbec :      0.02s CPU      0.04s WALL (    1486 calls)
+     vloc_psi     :      0.42s CPU      0.47s WALL (    1486 calls)
+                                        0.00s GPU  (    1486 calls)
+     add_vuspsi   :      0.01s CPU      0.01s WALL (    1486 calls)
+
+     General routines
+     calbec       :      0.04s CPU      0.05s WALL (    2866 calls)
+     fft          :      0.15s CPU      0.16s WALL (     102 calls)
+     ffts         :      0.19s CPU      0.19s WALL (      12 calls)
+     fftw         :      0.44s CPU      0.48s WALL (   14598 calls)
+     interpolate  :      0.19s CPU      0.19s WALL (       6 calls)
+
+     Parallel routines
+
+     PWSCF        :      2.02s CPU      2.46s WALL
+
+
+   This run was terminated on:  11:41:32   3Oct2026            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
+
+@@ section=stdout_tail status=ok collected_at=2026-10-03T15:58:05Z detail=last-2500-bytes
+path=/home/runhan/work_superconductor_bcs_20261003/02_qe_al_smoke/slurm-313274.out
+JobID=313274
+WorkDir=/home/runhan/work_superconductor_bcs_20261003/02_qe_al_smoke
+
+Currently Loaded Modules:
+  1) CCconfig                         14) ucx/1.14.1
+  2) gentoo/2023              (S)     15) libfabric/1.18.0
+  3) imkl/2023.2.0            (math)  16) pmix/4.2.4
+  4) StdEnv/2023              (S)     17) ucc/1.2.0
+  5) mii/1.1.2                        18) openmpi/4.1.5       (m)
+  6) slurm-completion/23.02.7         19) fftw/3.3.10         (math)
+  7) libcerf/2.4              (math)  20) fftw-mpi/3.3.10     (math)
+  8) qt/5.15.11               (t)     21) scalapack/2.2.0     (math)
+  9) gnuplot/5.4.8            (vis)   22) hdf5-mpi/1.14.2     (io)
+ 10) gcc/12.3                 (t)     23) elpa/2023.05.001    (math)
+ 11) flexiblas/3.3.1                  24) libxc/6.2.2         (chem)
+ 12) gcccore/.12.3            (H)     25) quantumespresso/7.5 (chem)
+ 13) hwloc/2.9.1
+
+  Where:
+   H:     Hidden Module
+   S:     Module is Sticky, requires --force to unload or purge
+   chem:  Chemistry libraries/apps / Logiciels de chimie
+   io:    Input/output software / Logiciel d'écriture/lecture
+   m:     MPI implementations / Implémentations MPI
+   math:  Mathematical libraries / Bibliothèques mathématiques
+   t:     Tools for development / Outils de développement
+   vis:   Visualisation software / Logiciels de visualisation
+
+ 
+
+/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/MPI/gcc12/openmpi4/quantumespresso/7.5/bin/pw.x
+/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/MPI/gcc12/openmpi4/quantumespresso/7.5/bin/ph.x
+f0b2e07d87046e616faccac1ea1ea534e4515351e052f1e56197083c0cccd479  scf.in
+d36513cf64551b42dc5777ecbc46b0fb48f488e7f86643dd95782adeda4f61a4  ph.in
+fd7b78921e6d0939095b681c328732668eaefd1dee6882fdbc03be463550cc97  /home/runhan/apps/qesssp/Al.pbe-n-kjpaw_psl.1.0.0.UPF
+SCF_AND_GAMMA_PHONON_OK
+
+@@ section=stderr_tail status=empty collected_at=2026-10-03T15:58:05Z detail=file-empty
+path=/home/runhan/work_superconductor_bcs_20261003/02_qe_al_smoke/slurm-313274.err
+capture_finished_at=2026-10-03T15:58:05Z
+
