@@ -1,0 +1,83 @@
+{
+  "review_date": "2026-10-04",
+  "record_url": "https://archive.materialscloud.org/records/a6p4k-eh221",
+  "record_api_url": "https://archive.materialscloud.org/api/records/a6p4k-eh221",
+  "dataset_doi": "10.24435/materialscloud:tf-kf",
+  "related_paper_doi": "10.1016/j.cpc.2016.07.028",
+  "authors": [
+    "Poncé, Samuel",
+    "Margine, Elena Roxana",
+    "Verdi, Carla",
+    "Giustino, Feliciano"
+  ],
+  "dataset_version": "v1 (2020-06-21)",
+  "archive_download_url": "https://archive.materialscloud.org/records/a6p4k-eh221/files/Ponce-CPC-2016.tar?download=1",
+  "archive_sha256": "1362f87c28360eaaeda8ca11a9934cf89fa141f8da8364e1dc5206f97d091804",
+  "archive_md5": "06b8275acde7a69090fcbf964bc282a0",
+  "archive_bytes": 1863680,
+  "regular_file_count": 75,
+  "inventory_json_sha256": "a1121572f2bd8f6e8b7ff36c5229a1a40f16ebc9b6c603f348465dcadff062e7",
+  "license_excerpt_json_sha256": "3dbd367682d6f610cafb584b9e6eb4a00c623b2977b896cbf699411bb1c799f9",
+  "MgB2_file_count": 25,
+  "redistributed_inputs": [
+    {
+      "archive_path": "Ponce-CPC-2016/MgB2/scf.in",
+      "path": "reference/materialscloud-2020.58/inputs/scf.in",
+      "bytes": 801,
+      "sha256": "9bf505c8abf8cc5aea574c3b519417ef126772d5072e3bcb3979ac08008ee68c"
+    },
+    {
+      "archive_path": "Ponce-CPC-2016/MgB2/nscf.in",
+      "path": "reference/materialscloud-2020.58/inputs/nscf.in",
+      "bytes": 12016,
+      "sha256": "39f817228761fab8bd29b39da0f9652549bfffc66e20b44b2dd9204882ac6f16"
+    },
+    {
+      "archive_path": "Ponce-CPC-2016/MgB2/ph.in",
+      "path": "reference/materialscloud-2020.58/inputs/ph.in",
+      "bytes": 299,
+      "sha256": "39a7d573c487d592358945e9f72b6ed2b3a9184105af483fdb705c2595afbf9d"
+    },
+    {
+      "archive_path": "Ponce-CPC-2016/MgB2/epw.in",
+      "path": "reference/materialscloud-2020.58/inputs/epw.in",
+      "bytes": 2971,
+      "sha256": "2415f41282ecc66cffdbc87530831f088418697a40275af2424eb1c06f61036e"
+    }
+  ],
+  "selected_inputs_license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/legalcode.en",
+  "input_bytes_modified": false,
+  "upstream_scripts_executed": false,
+  "pseudopotentials_redistributed": false,
+  "source_paper_pdf_redistributed": false,
+  "contains_author_Fig6_imaginary_gap_pointset": false,
+  "contains_material_ephmat_kernel": false,
+  "paper_reproduction_completed": false,
+  "new_cluster_jobs": 0,
+  "target": {
+    "doi": "10.1103/PhysRevB.87.024505",
+    "read_version": "arXiv:1211.3345v1",
+    "page": 10,
+    "figure": "6(a)",
+    "temperature_K": 10.0,
+    "mu_star": 0.16,
+    "publisher_pdf_comparison_completed": false
+  },
+  "scope": "Licensed input archive audit and original synthetic parser exercises only",
+  "documentation": [
+    {
+      "url": "https://docs.epw-code.org/tutorials/archived/MgB2.html",
+      "role": "Legacy five-column schema only; not a current universal format"
+    },
+    {
+      "url": "https://docs.epw-code.org/tutorials/tutorial_04/index.html",
+      "role": "2026 FSR parameter comparison only; mutable page, not copied or run"
+    }
+  ],
+  "synthetic_fixture": {
+    "path": "fixtures/synthetic_legacy_five.dat",
+    "is_author_data": false,
+    "is_material_calculation": false
+  }
+}

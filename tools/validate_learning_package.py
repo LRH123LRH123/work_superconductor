@@ -238,9 +238,11 @@ def main():
     check_extra_deck(locate("slides/双带与各向异性Eliashberg入门.pptx"), 20, ns, problems)
     if not locate("slides/双带与各向异性Eliashberg入门.pdf").read_bytes().startswith(b"%PDF-"):
         problems.append("Invalid two-band slide PDF")
+    from validate_mgb2_data_package import validate_package as validate_mgb2_data
+    problems.extend(validate_mgb2_data(locate("reproductions/02_mgb2_imaginary_gap")))
     if problems:
         raise SystemExit("\n".join(problems))
-    print("PASS: links, 37 executed notebook cells, BCS/BdG/Al/EPC/two-band numeric checks, "
+    print("PASS: links, 43 executed notebook cells, BCS/BdG/Al/EPC/two-band/MgB2-data numeric checks, "
           "resource/cluster hashes, real job identities, LF inputs, 117 slides/notes and slide bounds.")
 
 

@@ -20,3 +20,11 @@ examples/06_epc_eliashberg/reference/source_manifest.json text eol=lf
 examples/06_epc_eliashberg/cluster/pb_regression/*.sh text eol=lf
 examples/06_epc_eliashberg/cluster/pb_regression/*.py text eol=lf
 examples/06_epc_eliashberg/cluster/pb_regression/results/** -text
+# Keep upstream byte-exact, including its original whitespace.
+reproductions/02_mgb2_imaginary_gap/reference/materialscloud-2020.58/inputs/** -text -whitespace
+reproductions/02_mgb2_imaginary_gap/reference/materialscloud-2020.58/*.json text eol=lf
+reproductions/02_mgb2_imaginary_gap/fixtures/** text eol=lf
+reproductions/02_mgb2_imaginary_gap/*.py text eol=lf
+reproductions/02_mgb2_imaginary_gap/*.ipynb text eol=lf
+reproductions/02_mgb2_imaginary_gap/*.json text eol=lf
+reproductions/02_mgb2_imaginary_gap/results/*.json text eol=lf

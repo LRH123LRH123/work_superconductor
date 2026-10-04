@@ -1,0 +1,17 @@
+{
+  "receipt_kind": "local_executed_build_fingerprint_not_a_signature",
+  "notebook_sha256": "fd27a2e769f86e0cb12c8c95bdcebe16b620ce43724aa4f4563aba56c51a8a71",
+  "executed_cells": 6,
+  "core_tests_run": 28,
+  "dependencies_sha256": {
+    "gap_io.py": "620b20eb1e3a8c06cb3af9f07cae8a1a08b279b8739f51550e5b990b23e8f975",
+    "archive_audit.py": "3bb5c1ae0f03d0e416b37a43214bcd0ef1f207a3bb2afb040fd0e99cc7738a10",
+    "test_gap_io.py": "e6eddc22c150b336beb499c71f8f9350b0fcc8f2545f5157cda1fb8dab4b2f1a",
+    "test_archive_audit.py": "2ee20742e9066c38c276a3f135d91cce6405cfb561252a3e92d3f7b70be70a4b",
+    "run_learning.py": "4fa11a4b2b31a4599a895dd513e617190b03cdb0dc0d3a718a6a8f2ec0f35769",
+    "build_notebook.py": "4134b26f6f071b6de0e44416384e0caed9eed275d9c5de378b6bc48d594c3f8b",
+    "source_manifest.json": "1fa9440cab0d47890e6f76ba18db972fbb9e1f22a49fadc85cdb639af631044a",
+    "results/validation.json": "009b6464dfb96975a9ffe9d83f8ad079b8684c73ac7be9c66e5984e55c3537cf",
+    "fixtures/synthetic_legacy_five.dat": "28f783fa8d77690d3bec22744a65a89d0ca1e09931e03ba080c53cd5e54e73be"
+  }
+}

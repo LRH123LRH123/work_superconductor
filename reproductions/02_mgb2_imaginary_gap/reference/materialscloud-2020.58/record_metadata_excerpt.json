@@ -1,0 +1,40 @@
+{
+  "title": "EPW: Electron-phonon coupling, transport and superconducting properties using maximally localized Wannier functions",
+  "publication_date": "2020-06-21",
+  "rights": [
+    {
+      "id": "cc-by-4.0",
+      "title": {
+        "en": "Creative Commons Attribution 4.0 International"
+      },
+      "description": {
+        "en": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited."
+      },
+      "icon": "cc-by-icon",
+      "props": {
+        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "scheme": "spdx"
+      }
+    }
+  ],
+  "creators": [
+    "Poncé, Samuel",
+    "Margine, Elena Roxana",
+    "Verdi, Carla",
+    "Giustino, Feliciano"
+  ],
+  "record_identity": {
+    "id": "a6p4k-eh221",
+    "doi": "10.24435/materialscloud:tf-kf",
+    "version_index": 1,
+    "archive_name": "Ponce-CPC-2016.tar",
+    "archive_checksum": "md5:06b8275acde7a69090fcbf964bc282a0",
+    "archive_bytes": 1863680
+  },
+  "provenance": {
+    "api_url": "https://archive.materialscloud.org/api/records/a6p4k-eh221",
+    "accessed_on": "2026-10-04",
+    "unmodified_api_snapshot_sha256": "39e1ef2923727138e4e9625af511577e89b66c151673a8f668e5355d6fc7937b",
+    "excerpt_not_full_api_snapshot": true
+  }
+}

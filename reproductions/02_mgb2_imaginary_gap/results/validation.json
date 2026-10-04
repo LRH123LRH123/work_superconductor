@@ -1,0 +1,46 @@
+{
+  "fixture_sha256": "28f783fa8d77690d3bec22744a65a89d0ca1e09931e03ba080c53cd5e54e73be",
+  "source_kind": "original_synthetic_format_fixture",
+  "is_author_data": false,
+  "is_material_calculation": false,
+  "declared_T_K": 10.0,
+  "temperature_verified_from_run_metadata": false,
+  "grid_residual_meV": 0.0003547390330904676,
+  "full_window": {
+    "total_rows": 3,
+    "retained_rows": 3,
+    "excluded_rows": 0,
+    "max_frequency_meV": 180.0,
+    "max_abs_xi_meV": null,
+    "frequency_range_meV": [
+      2.7070000000000003,
+      8.122
+    ],
+    "gap_range_meV": [
+      -2.0,
+      6.0
+    ],
+    "has_band_labels": false,
+    "has_DOS_weights": false,
+    "is_paper_reproduction": false
+  },
+  "narrow_window": {
+    "total_rows": 3,
+    "retained_rows": 2,
+    "excluded_rows": 1,
+    "max_frequency_meV": 2.707,
+    "max_abs_xi_meV": 50,
+    "frequency_range_meV": [
+      2.7070000000000003,
+      2.7070000000000003
+    ],
+    "gap_range_meV": [
+      -2.0,
+      6.0
+    ],
+    "has_band_labels": false,
+    "has_DOS_weights": false,
+    "is_paper_reproduction": false
+  },
+  "new_cluster_jobs": 0
+}
