@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-04",
+  "python": "3.12.4",
+  "numpy": "1.26.4",
+  "scipy": "1.13.1",
+  "matplotlib": "3.8.4",
+  "nbformat": "5.9.2",
+  "nbclient": "0.8.0",
+  "pptxgenjs": "4.0.1",
+  "jszip": "3.10.1",
+  "cluster_qe_module": "quantumespresso/7.5",
+  "observed_epw_banner": "6.0",
+  "scope": "Local Python/Notebook reproduction and native PowerPoint export; not a material convergence certificate"
+}

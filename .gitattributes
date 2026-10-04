@@ -15,3 +15,8 @@ examples/05_qe_al_kmesh_smearing/scan_plan.json text eol=lf
 examples/05_qe_al_kmesh_smearing/k*_s*/*.in text eol=lf
 examples/05_qe_al_kmesh_smearing/k*_s*/output -text
 examples/05_qe_al_kmesh_smearing/results/slurm-*.out -text
+examples/06_epc_eliashberg/reference/qe-7.5/** -text
+examples/06_epc_eliashberg/reference/source_manifest.json text eol=lf
+examples/06_epc_eliashberg/cluster/pb_regression/*.sh text eol=lf
+examples/06_epc_eliashberg/cluster/pb_regression/*.py text eol=lf
+examples/06_epc_eliashberg/cluster/pb_regression/results/** -text

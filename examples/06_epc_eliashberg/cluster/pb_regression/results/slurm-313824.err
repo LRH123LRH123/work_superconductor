@@ -1,0 +1,12 @@
+Note: The following floating-point exceptions are signalling: IEEE_DIVIDE_BY_ZERO
+Note: The following floating-point exceptions are signalling: IEEE_DIVIDE_BY_ZERO
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+Note: The following floating-point exceptions are signalling: IEEE_DIVIDE_BY_ZERO
+Traceback (most recent call last):
+  File "/home/runhan/work_superconductor_epc_20261004/pb_regression_retry01/validate_epw.py", line 37, in <module>
+    count = check_table(Path(sys.argv[2]).read_text(encoding="utf-8"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runhan/work_superconductor_epc_20261004/pb_regression_retry01/validate_epw.py", line 20, in check_table
+    rows = [[float(v) for v in line.split()] for line in text.splitlines()
+             ^^^^^^^^
+ValueError: could not convert string to float: 'Integrated'

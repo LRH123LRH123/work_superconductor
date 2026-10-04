@@ -1,0 +1,147 @@
+{
+  "date": "2026-10-04",
+  "selected_raw_data_job_id": "313824",
+  "raw_data_scheduler_state": "FAILED",
+  "raw_data_failure": "Only the post-run table parser failed on the documented legacy EPW footer. SCF, NSCF and EPW outputs passed the corrected checker locally.",
+  "files": [
+    {
+      "path": "results/output",
+      "source_path": "/home/runhan/work_superconductor_epc_20261004/pb_regression_retry01/output",
+      "sha256": "71d962f52a7c3c82967ccc98c459c5226920340e31df9041e417957da6deab05",
+      "bytes": 553487
+    },
+    {
+      "path": "results/scf.output",
+      "source_path": "/home/runhan/work_superconductor_epc_20261004/pb_regression_retry01/scf.output",
+      "sha256": "f27b04d517b7b7303bb2fe7f6ee5142a7755ce03f44df21645306708f5315785",
+      "bytes": 40429
+    },
+    {
+      "path": "results/nscf.output",
+      "source_path": "/home/runhan/work_superconductor_epc_20261004/pb_regression_retry01/nscf.output",
+      "sha256": "68608fbda556f9549902830641f1e3da1c0bb6d7ad0bed64237b8bdb74703a10",
+      "bytes": 12908
+    },
+    {
+      "path": "results/pb.a2f.01.300.000",
+      "source_path": "/home/runhan/work_superconductor_epc_20261004/pb_regression_retry01/pb.a2f.01.300.000",
+      "sha256": "ba933049d28d64d2d4de7fd80e7b6407d3a28215b6d8f55f1667559fa55fa920",
+      "bytes": 66919
+    },
+    {
+      "path": "results/scf.in",
+      "source_path": "/home/runhan/work_superconductor_epc_20261004/pb_regression_retry01/scf.in",
+      "sha256": "5af1e0883710e8d05cb117c927c1c6631e4c162e6e4c10b67565ffc12cd34c7e",
+      "bytes": 808
+    },
+    {
+      "path": "results/nscf.in",
+      "source_path": "/home/runhan/work_superconductor_epc_20261004/pb_regression_retry01/nscf.in",
+      "sha256": "62011a368e90acf1c62b09ef45c12ba1098859b00490b39d2c6b66a73124302a",
+      "bytes": 2780
+    },
+    {
+      "path": "results/epw.in",
+      "source_path": "/home/runhan/work_superconductor_epc_20261004/pb_regression_retry01/epw.in",
+      "sha256": "546230d224a12dd94575126d2bde3c815806823c984fc5856145bf3afce9065e",
+      "bytes": 1398
+    },
+    {
+      "path": "results/submit.sh",
+      "source_path": "/home/runhan/work_superconductor_epc_20261004/pb_regression_retry01/submit.sh",
+      "sha256": "31ee6dc3e3ed00f07ee72c5f6d5ddca3c36e953af2228bc3bca0259a3689455e",
+      "bytes": 949
+    },
+    {
+      "path": "results/slurm-313824.out",
+      "source_path": "/home/runhan/work_superconductor_epc_20261004/pb_regression_retry01/slurm-313824.out",
+      "sha256": "4068cdb2c1a8b108ffe24f387c014fb1e61296518989397e6fb38927d3c7264a",
+      "bytes": 1600
+    },
+    {
+      "path": "results/slurm-313824.err",
+      "source_path": "/home/runhan/work_superconductor_epc_20261004/pb_regression_retry01/slurm-313824.err",
+      "sha256": "a50da9d116fc0cd41f726e8ee305ffc736a5f4474865c21ff3293a2af956b476",
+      "bytes": 909
+    }
+  ],
+  "scope": "Upstream DFPT data reused; SCF/NSCF and coarse EPW recalculated; fixed parameters; not converged material prediction",
+  "attempts": [
+    {
+      "job_id": "313822",
+      "state": "FAILED",
+      "reason": "EPW output was incorrectly required to contain PW JOB DONE marker"
+    },
+    {
+      "job_id": "313824",
+      "state": "FAILED",
+      "reason": "Numeric parser did not recognize textual EPW legacy spectrum footer"
+    },
+    {
+      "job_id": "313836",
+      "state": "COMPLETED",
+      "reason": "Same fixed physical inputs, corrected completion checker",
+      "exit_code": "0:0",
+      "runtime": "00:00:43",
+      "remote": "/home/runhan/work_superconductor_epc_20261004/pb_regression_retry02",
+      "capture_utc": "2026-10-04T05:22:28Z"
+    }
+  ],
+  "final_job_files": [
+    {
+      "source_path": "/home/runhan/work_superconductor_epc_20261004/pb_regression_retry02/pb.a2f.01.300.000",
+      "sha256": "ba933049d28d64d2d4de7fd80e7b6407d3a28215b6d8f55f1667559fa55fa920",
+      "bytes": 66919,
+      "archived_local": true,
+      "path": "results/final_job/pb.a2f.01.300.000"
+    },
+    {
+      "source_path": "/home/runhan/work_superconductor_epc_20261004/pb_regression_retry02/slurm-313836.out",
+      "sha256": "9d74250cecef1db22d1cb3f0b56bbe360a90c1ca96ac9be425303dae0a6137e3",
+      "bytes": 1724,
+      "archived_local": true,
+      "path": "results/final_job/slurm-313836.out"
+    },
+    {
+      "source_path": "/home/runhan/work_superconductor_epc_20261004/pb_regression_retry02/slurm-313836.err",
+      "sha256": "8775bf05e060648394e3f86e25b7007fe3a2f61fd7f743b6daea511307dfb190",
+      "bytes": 342,
+      "archived_local": true,
+      "path": "results/final_job/slurm-313836.err"
+    },
+    {
+      "source_path": "/home/runhan/work_superconductor_epc_20261004/pb_regression_retry02/scf.in",
+      "sha256": "5af1e0883710e8d05cb117c927c1c6631e4c162e6e4c10b67565ffc12cd34c7e",
+      "bytes": 808,
+      "archived_local": true,
+      "path": "results/final_job/scf.in"
+    },
+    {
+      "source_path": "/home/runhan/work_superconductor_epc_20261004/pb_regression_retry02/nscf.in",
+      "sha256": "62011a368e90acf1c62b09ef45c12ba1098859b00490b39d2c6b66a73124302a",
+      "bytes": 2780,
+      "archived_local": true,
+      "path": "results/final_job/nscf.in"
+    },
+    {
+      "source_path": "/home/runhan/work_superconductor_epc_20261004/pb_regression_retry02/epw.in",
+      "sha256": "546230d224a12dd94575126d2bde3c815806823c984fc5856145bf3afce9065e",
+      "bytes": 1398,
+      "archived_local": true,
+      "path": "results/final_job/epw.in"
+    },
+    {
+      "source_path": "/home/runhan/work_superconductor_epc_20261004/pb_regression_retry02/validate_epw.py",
+      "sha256": "ca5f5fa1d9ad3e80b2c29e17b60dcab57f9d2e152fa7d0bfc4f902ef8394f10d",
+      "bytes": 3213,
+      "archived_local": true,
+      "path": "results/final_job/validate_epw.py"
+    },
+    {
+      "source_path": "/home/runhan/work_superconductor_epc_20261004/pb_regression_retry02/output",
+      "sha256": "32168d3d103409c983903f2ca494b408f254c76528f47838409cdbec98614fe9",
+      "bytes": 553637,
+      "archived_local": false
+    }
+  ]
+}

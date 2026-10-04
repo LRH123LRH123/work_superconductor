@@ -7,7 +7,8 @@ Superconductivity: Theory, Computation and Literature Reproduction
 当前已有 **BCS 与 BdG 两套详细中文教程、Python、已执行 Notebook、配套 PPTX/PDF 和数值验证**，
 以及参考 HostBridge 在 IQ 集群完成的 **Al SCF + Γ 点 DFPT + ASR 冒烟测试、波函数截断能扫描和 k 网格 × 冷展宽交叉扫描**。
 金属积分学习包也配有中文教程、已执行 Notebook、14 页 PPTX/PDF 与原始日志。
-已保存输入、小型原始日志、版本和 JobID。**尚未完成全 EPC/Tc 材料预测或原论文定量图表复现。**
+已保存输入、小型原始日志、版本和 JobID。新增 **EPC/Eliashberg 详细教程、代码、已执行 Notebook、20 页 PPTX/PDF 和 Pb 固定参数回归**。
+**尚未完成收敛的材料 Tc 预测或原论文定量图表复现。** 按当前学习安排，不再扩展密度、截断能或展宽扫描。
 
 ## 第一套学习包
 
@@ -50,7 +51,23 @@ Al 的 30 Ry 相对 80 Ry 总能差为 0.793 meV/原子，仅满足当前固定�
 
 网格为 8³、12³、16³、20³，冷展宽为 0.020、0.010、0.005 Ry。
 **扫描已完成，但三个展宽平面均无通过预设联合阈值的非参考网格；不能宣称电子积分已收敛。**
-20³ 只是各展宽的有限参考。下一轮优先测试更密网格，再复核截断能、电荷密度截断和几何。
+20³ 只是各展宽的有限参考。旧扫描保留为历史证据，不继续加密或截断能测试；未收敛结论不改写。
+
+## 第四套学习包
+
+| 材料 | 入口 | 完成状态 |
+|---|---|---|
+| EPC/Eliashberg 详细教程 | [中文入门教程](examples/06_epc_eliashberg/电子声子耦合与Eliashberg入门教程.md) | 谱矩、单位、迟滞核、正虚频折叠、线性/非线性求解与答案 |
+| 代码与验证 | [案例入口](examples/06_epc_eliashberg/README.md) | 20 项检查，官方 Al 积分及独立 Einstein 模型 |
+| 交互练习 | [已执行 Notebook](examples/06_epc_eliashberg/EPC与Eliashberg交互教程.ipynb) | 8 个代码单元已执行 |
+| 配套课件 | [20 页 PPTX](slides/电子声子耦合与Eliashberg计算入门.pptx) / [PDF](slides/电子声子耦合与Eliashberg计算入门.pdf) | 每页有中文讲解备注 |
+| 真实集群回归 | [Pb 固定流程与记录](examples/06_epc_eliashberg/集群测试记录.md) | 313836 完成；λ 与官方小回归差 8×10^-7，保留前两次检查失败 |
+| 文献学习 | [Eliashberg 阅读与复现目标](literature/Eliashberg方法文献阅读与复现目标.md) | 已有方程级练习，论文图号目标待确认 |
+| 首个基准复现项目 | [Pb EPC 标量基准](reproductions/01_pb_epc_regression/README.md) | 条件、对象、容差及实际偏差明确，非论文完整复现 |
+
+Al 使用官方参考数字表，并非此前 SCF 生成的 EPC；Einstein 的约 9.26 K 是有限模型，不是 Pb。
+Pb 自己重跑 SCF/NSCF/EPW，但复用上游 DFPT，固定 3³→6³，无 SOC，不能作材料 Tc 结论。
+来源文件与许可单独保存；本轮不继续参数收敛扫描。
 
 ## 学习导航
 
@@ -79,6 +96,7 @@ examples/02_qe_al_smoke/      Al SCF/Γ 声子/ASR 输入与实测记录
 examples/03_bdg_uniform/      固定均匀 s 波 BdG、LDOS 与解析验证
 examples/04_qe_al_cutoff/     Al 截断能扫描输入、原始日志与汇总
 examples/05_qe_al_kmesh_smearing/  Al 金属积分交叉扫描、教程与实测证据
+examples/06_epc_eliashberg/   EPC/Eliashberg 教程、模型求解、谱积分与 Pb 固定回归
 slides/                      中文课件、讲解备注与生成源代码
 resources/                   许可明确的教材副本及来源清单
 ```
@@ -99,10 +117,12 @@ resources/                   许可明确的教材副本及来源清单
 - [x] 完成 Al SCF、Γ 点 DFPT 与 ASR 集群冒烟测试。
 - [x] 完成 Al ecutwfc 单变量扫描及有限参考总能误差分析。
 - [x] 完成 Al k 网格 × 冷展宽交叉实验及联合判据分析，诚实保留未通过结果。
-- [ ] 扩展更密 k 参考，完成 smearing、ecutrho 与几何验证，再转向有限 q。
+- [ ] 材料精度所需的更密 k、smearing、ecutrho 与几何证据仍缺失；按用户安排暂停扩展扫描。
 - [x] 完成均匀 s 波 BdG 谱、LDOS 与解析解的比较。
-- [ ] 按 EPW 官方教程开展 Pb/MgB2 计算，记录网格和展宽收敛。
+- [x] 完成 EPC 谱矩、完整 Allen-Dynes 与有限 Einstein Eliashberg 模型学习包。
+- [x] 集群完成 Pb 官方小型固定参数回归，保留输入、谱、失败原因与成功状态。
+- [ ] 阅读各向异性方程，选定固定教程曲线或原始论文图表；不自动提交大型 Pb/MgB2 或收敛扫描。
 - [ ] 建立二维 Hubbard 模型的正常态易感率与配对通道练习。
 - [ ] 选定一篇原始论文和一个具体图/表，建立首个文献复现目录。
 
-整理日期：2026-10-03。原机制综述的文献检索范围见其文首说明。
+整理日期：2026-10-04。原机制综述的文献检索范围见其文首说明。

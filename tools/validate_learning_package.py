@@ -228,10 +228,15 @@ def main():
     check_extra_deck(locate("slides/Al金属k网格与展宽收敛入门.pptx"), 14, ns, problems)
     if not locate("slides/Al金属k网格与展宽收敛入门.pdf").read_bytes().startswith(b"%PDF-"):
         problems.append("Invalid Al slide PDF")
+    from validate_epc_package import validate_package
+    problems.extend(validate_package(locate("examples/06_epc_eliashberg")))
+    check_extra_deck(locate("slides/电子声子耦合与Eliashberg计算入门.pptx"), 20, ns, problems)
+    if not locate("slides/电子声子耦合与Eliashberg计算入门.pdf").read_bytes().startswith(b"%PDF-"):
+        problems.append("Invalid EPC slide PDF")
     if problems:
         raise SystemExit("\n".join(problems))
-    print("PASS: links, 21 executed notebook cells, BCS/BdG/Al numeric checks, "
-          "resource/cluster hashes, LF inputs, 77 slides/notes and slide bounds.")
+    print("PASS: links, 29 executed notebook cells, BCS/BdG/Al/EPC numeric checks, "
+          "resource/cluster hashes, real job identities, LF inputs, 97 slides/notes and slide bounds.")
 
 
 if __name__ == "__main__":

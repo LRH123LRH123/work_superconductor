@@ -1,6 +1,16 @@
 # 超导理论与计算入门课件
 
-## 材料计算专题：Al 金属收敛
+## 第四课：EPC 与 Eliashberg
+
+[20 页 PPTX](电子声子耦合与Eliashberg计算入门.pptx) · [PDF](电子声子耦合与Eliashberg计算入门.pdf) · [详细教程](../examples/06_epc_eliashberg/电子声子耦合与Eliashberg入门教程.md) · [已执行 Notebook](../examples/06_epc_eliashberg/EPC与Eliashberg交互教程.ipynb)
+
+讲解谱函数、单位、谱矩、Allen-Dynes、正虚频折叠、线性 Tc 和非线性 Δ/Z。
+Al 官方参考、Einstein 模型和真实 Pb 小回归分开呈现；20 页有中文备注。
+不继续密度、截断能或展宽扫描，不把模型 Tc 或粗回归 λ 当作材料预测。
+先运行案例 `run_learning.py`，再运行 `npm run build:epc`；依赖及字体同下方。
+课件文字/示意可编辑，四幅结果图由本课数据重绘。见 [检查记录](EPC与Eliashberg课件检查记录.md)。
+
+## 材料计算专题：Al 金属收敛（历史实验）
 
 [14 页 PPTX](Al金属k网格与展宽收敛入门.pptx) · [PDF](Al金属k网格与展宽收敛入门.pdf) · [详细教程](../examples/05_qe_al_kmesh_smearing/Al金属k网格与展宽收敛教程.md) · [实测记录](../examples/05_qe_al_kmesh_smearing/集群测试记录.md)
 

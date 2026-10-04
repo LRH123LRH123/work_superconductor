@@ -1,0 +1,35 @@
+2026-10-04T05:08:05Z
+
+Currently Loaded Modules:
+  1) CCconfig                         14) ucx/1.14.1
+  2) gentoo/2023              (S)     15) libfabric/1.18.0
+  3) imkl/2023.2.0            (math)  16) pmix/4.2.4
+  4) StdEnv/2023              (S)     17) ucc/1.2.0
+  5) mii/1.1.2                        18) openmpi/4.1.5       (m)
+  6) slurm-completion/23.02.7         19) fftw/3.3.10         (math)
+  7) libcerf/2.4              (math)  20) fftw-mpi/3.3.10     (math)
+  8) qt/5.15.11               (t)     21) scalapack/2.2.0     (math)
+  9) gnuplot/5.4.8            (vis)   22) hdf5-mpi/1.14.2     (io)
+ 10) gcc/12.3                 (t)     23) elpa/2023.05.001    (math)
+ 11) flexiblas/3.3.1                  24) libxc/6.2.2         (chem)
+ 12) gcccore/.12.3            (H)     25) quantumespresso/7.5 (chem)
+ 13) hwloc/2.9.1
+
+  Where:
+   H:     Hidden Module
+   S:     Module is Sticky, requires --force to unload or purge
+   chem:  Chemistry libraries/apps / Logiciels de chimie
+   io:    Input/output software / Logiciel d'écriture/lecture
+   m:     MPI implementations / Implémentations MPI
+   math:  Mathematical libraries / Bibliothèques mathématiques
+   t:     Tools for development / Outils de développement
+   vis:   Visualisation software / Logiciels de visualisation
+
+ 
+
+5af1e0883710e8d05cb117c927c1c6631e4c162e6e4c10b67565ffc12cd34c7e  scf.in
+62011a368e90acf1c62b09ef45c12ba1098859b00490b39d2c6b66a73124302a  nscf.in
+546230d224a12dd94575126d2bde3c815806823c984fc5856145bf3afce9065e  epw.in
+24fe8cc951a89521da24dc6bd936b462078927a6970132848a355857a82d27af  pb_s.UPF
+SCF_OK
+NSCF_OK

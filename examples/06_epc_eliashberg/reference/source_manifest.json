@@ -1,0 +1,254 @@
+{
+  "files": [
+    {
+      "bytes": 18009,
+      "stored_in_repository": true,
+      "sha256": "204d8eff92f95aac4df6c8122bc1505f468f3a901e5a4cc08940e0ede1938994",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/License",
+      "source_path": "License"
+    },
+    {
+      "bytes": 50570,
+      "stored_in_repository": true,
+      "sha256": "bf174313a004ba0fbe4a382a655b22a91324553f0c13ca325bd54b0feb98fb3b",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/PHonon/examples/tetra_example/reference/aluminum.a2F.dat",
+      "source_path": "PHonon/examples/tetra_example/reference/aluminum.a2F.dat"
+    },
+    {
+      "bytes": 3495,
+      "stored_in_repository": true,
+      "sha256": "1acaafb2682285322b83c5e03ff30f4487cd182739621931441d8882fef4ec79",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/PHonon/examples/tetra_example/reference/al.a2F.out",
+      "source_path": "PHonon/examples/tetra_example/reference/al.a2F.out"
+    },
+    {
+      "bytes": 1332,
+      "stored_in_repository": true,
+      "sha256": "7b51696e5ff2b27ede1f651f016042aadf20d792b4b820a58909ead13b3c1857",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/epw1.in",
+      "source_path": "test-suite/epw_metal/epw1.in"
+    },
+    {
+      "bytes": 753,
+      "stored_in_repository": true,
+      "sha256": "9520549578189638d78764e945b9c708888c4398248e2a9ad7d4c461a5b13466",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/scf_epw.in",
+      "source_path": "test-suite/epw_metal/scf_epw.in"
+    },
+    {
+      "bytes": 2714,
+      "stored_in_repository": true,
+      "sha256": "1d3de0ff8c9f8c4b827bfbc0d63485909d11f483e94acc77b4b57e50a3f2616e",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/nscf_epw.in",
+      "source_path": "test-suite/epw_metal/nscf_epw.in"
+    },
+    {
+      "bytes": 555483,
+      "stored_in_repository": true,
+      "sha256": "c6e613f79eb8d1192b88b6e19043e7986b037674acbf569655d331b22b83a70e",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/benchmark.out.git.inp=epw1.in.args=3",
+      "source_path": "test-suite/epw_metal/benchmark.out.git.inp=epw1.in.args=3"
+    },
+    {
+      "bytes": 410130,
+      "stored_in_repository": false,
+      "sha256": "24fe8cc951a89521da24dc6bd936b462078927a6970132848a355857a82d27af",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/EPW/examples/pb/pp/pb_s.UPF",
+      "source_path": "EPW/examples/pb/pp/pb_s.UPF"
+    },
+    {
+      "bytes": 8378,
+      "stored_in_repository": false,
+      "sha256": "a5c4d27e2b19fc11a75f1704b85c0dce8ac16bb1760178e7de570d44ff531450",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/save/ifc.q2r",
+      "source_path": "test-suite/epw_metal/save/ifc.q2r"
+    },
+    {
+      "bytes": 2239488,
+      "stored_in_repository": false,
+      "sha256": "a5f6d9a05c5e3d04ce1f6888d07c2415006bfc31df5c933a6a67a3c162576b30",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/save/pb.dvscf_q1",
+      "source_path": "test-suite/epw_metal/save/pb.dvscf_q1"
+    },
+    {
+      "bytes": 2239488,
+      "stored_in_repository": false,
+      "sha256": "5a7bc73d22010536ccce6672bed6b8ab691a59876c61909914b43716ca985a66",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/save/pb.dvscf_q2",
+      "source_path": "test-suite/epw_metal/save/pb.dvscf_q2"
+    },
+    {
+      "bytes": 2239488,
+      "stored_in_repository": false,
+      "sha256": "135f57f97b9a64da592e7abecf73e00c15e39f4190c5ddfd726ca0a5fbb18664",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/save/pb.dvscf_q3",
+      "source_path": "test-suite/epw_metal/save/pb.dvscf_q3"
+    },
+    {
+      "bytes": 2239488,
+      "stored_in_repository": false,
+      "sha256": "d61daefdf3129b62fff11ae085d64c181e79c3d0407a7034790b192eba9c9e52",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/save/pb.dvscf_q4",
+      "source_path": "test-suite/epw_metal/save/pb.dvscf_q4"
+    },
+    {
+      "bytes": 1277,
+      "stored_in_repository": false,
+      "sha256": "447b0cdf779cef5a7eff60feb69fb4ce9fc19a40ca69e576567bdd01cb50ba1b",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/save/pb.dyn_q1",
+      "source_path": "test-suite/epw_metal/save/pb.dyn_q1"
+    },
+    {
+      "bytes": 3678,
+      "stored_in_repository": false,
+      "sha256": "479607e2d2742b531ea3f4a16c0fd64ac617a6c9401139bc121890a3f50b26dc",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/save/pb.dyn_q2",
+      "source_path": "test-suite/epw_metal/save/pb.dyn_q2"
+    },
+    {
+      "bytes": 2992,
+      "stored_in_repository": false,
+      "sha256": "cd29f33e7c02cfa2299628d7623e817224d06b430dc75d35909d02ce6976f7ac",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/save/pb.dyn_q3",
+      "source_path": "test-suite/epw_metal/save/pb.dyn_q3"
+    },
+    {
+      "bytes": 5050,
+      "stored_in_repository": false,
+      "sha256": "1b8d0b2220b84f219cf5647689c77341b061e7c049fab4b1796756047c5c75b9",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/save/pb.dyn_q4",
+      "source_path": "test-suite/epw_metal/save/pb.dyn_q4"
+    },
+    {
+      "bytes": 1546,
+      "stored_in_repository": false,
+      "sha256": "40bd7791b078434ebcf151828d4e6706e30bf59a922c39669e5e8974290f0745",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/save/pb.phsave/control_ph.xml",
+      "source_path": "test-suite/epw_metal/save/pb.phsave/control_ph.xml"
+    },
+    {
+      "bytes": 752,
+      "stored_in_repository": false,
+      "sha256": "432aad8dc2faa3d5db054e2e52c233836c3bc326bd65b62d927099c49ec7acc3",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/save/pb.phsave/dynmat.1.0.xml",
+      "source_path": "test-suite/epw_metal/save/pb.phsave/dynmat.1.0.xml"
+    },
+    {
+      "bytes": 752,
+      "stored_in_repository": false,
+      "sha256": "1fbe2410605bfe3b2c4d9534170c57c0149d4141b015ee8cde38df24ff1fbf2e",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/save/pb.phsave/dynmat.1.1.xml",
+      "source_path": "test-suite/epw_metal/save/pb.phsave/dynmat.1.1.xml"
+    },
+    {
+      "bytes": 752,
+      "stored_in_repository": false,
+      "sha256": "fa3dc785197d8640fecd397c294db938c6d30c6b70d5f53d0153fc2c5db7d7cf",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/save/pb.phsave/dynmat.2.0.xml",
+      "source_path": "test-suite/epw_metal/save/pb.phsave/dynmat.2.0.xml"
+    },
+    {
+      "bytes": 752,
+      "stored_in_repository": false,
+      "sha256": "ffd2c92978b41a654506207380ba7c8de860b5d190a65971c9e701e5339eb993",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/save/pb.phsave/dynmat.2.1.xml",
+      "source_path": "test-suite/epw_metal/save/pb.phsave/dynmat.2.1.xml"
+    },
+    {
+      "bytes": 752,
+      "stored_in_repository": false,
+      "sha256": "c0c0b03387f1d119ffdd47f082f3dd608a85dc55e1f127e7d3d021482a7bf8ec",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/save/pb.phsave/dynmat.2.2.xml",
+      "source_path": "test-suite/epw_metal/save/pb.phsave/dynmat.2.2.xml"
+    },
+    {
+      "bytes": 752,
+      "stored_in_repository": false,
+      "sha256": "d08ecb33bb451a12489ca043791bf062af56cd3c5840dfcb52c95c6c8ffcaa89",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/save/pb.phsave/dynmat.3.0.xml",
+      "source_path": "test-suite/epw_metal/save/pb.phsave/dynmat.3.0.xml"
+    },
+    {
+      "bytes": 752,
+      "stored_in_repository": false,
+      "sha256": "b3e6696dc20ae7c587718d92f2c088dc1b3f134d208e5bde37877c5a5987e917",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/save/pb.phsave/dynmat.3.1.xml",
+      "source_path": "test-suite/epw_metal/save/pb.phsave/dynmat.3.1.xml"
+    },
+    {
+      "bytes": 752,
+      "stored_in_repository": false,
+      "sha256": "5b9b6c918c92bb046c4ffa7dfe3bd1406f1925ea6cbb45ba4d2d08a5dff6b572",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/save/pb.phsave/dynmat.3.2.xml",
+      "source_path": "test-suite/epw_metal/save/pb.phsave/dynmat.3.2.xml"
+    },
+    {
+      "bytes": 752,
+      "stored_in_repository": false,
+      "sha256": "880703881307fa4a4a4f8bca601ea9aad439c9451ae83e0c1c4d357c2c9a9a9d",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/save/pb.phsave/dynmat.4.0.xml",
+      "source_path": "test-suite/epw_metal/save/pb.phsave/dynmat.4.0.xml"
+    },
+    {
+      "bytes": 752,
+      "stored_in_repository": false,
+      "sha256": "0eaf6e516970dfa89ff78ceeec28923b5698fbe86cd67565b730c1d331c9735c",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/save/pb.phsave/dynmat.4.1.xml",
+      "source_path": "test-suite/epw_metal/save/pb.phsave/dynmat.4.1.xml"
+    },
+    {
+      "bytes": 752,
+      "stored_in_repository": false,
+      "sha256": "af4114bb2797d9dffc8c91b514b6dae83c5fcd1163efa5c263705b49945610f5",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/save/pb.phsave/dynmat.4.2.xml",
+      "source_path": "test-suite/epw_metal/save/pb.phsave/dynmat.4.2.xml"
+    },
+    {
+      "bytes": 752,
+      "stored_in_repository": false,
+      "sha256": "d41550e807f05047de9b4cd0c98caf8daa01a6e9346aff5bd44c8424b97633e3",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/save/pb.phsave/dynmat.4.3.xml",
+      "source_path": "test-suite/epw_metal/save/pb.phsave/dynmat.4.3.xml"
+    },
+    {
+      "bytes": 2027,
+      "stored_in_repository": false,
+      "sha256": "3ae727f898a639c626c55bbc7142d2137268a0c494980faa2b8623dd037c466b",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/save/pb.phsave/patterns.1.xml",
+      "source_path": "test-suite/epw_metal/save/pb.phsave/patterns.1.xml"
+    },
+    {
+      "bytes": 2170,
+      "stored_in_repository": false,
+      "sha256": "0ee01c2436c7712ffae01d3447ecfea3201bfb0cea406d652679cc9c9638ead9",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/save/pb.phsave/patterns.2.xml",
+      "source_path": "test-suite/epw_metal/save/pb.phsave/patterns.2.xml"
+    },
+    {
+      "bytes": 2170,
+      "stored_in_repository": false,
+      "sha256": "10a93ae5cc9b45550c1638405d69f5feb350d6bc1be9726bc36dda6cc29fdc75",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/save/pb.phsave/patterns.3.xml",
+      "source_path": "test-suite/epw_metal/save/pb.phsave/patterns.3.xml"
+    },
+    {
+      "bytes": 2313,
+      "stored_in_repository": false,
+      "sha256": "b18783636b91ccdab32048d22121752a7742b14f43236e3dde473099065066cb",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/save/pb.phsave/patterns.4.xml",
+      "source_path": "test-suite/epw_metal/save/pb.phsave/patterns.4.xml"
+    },
+    {
+      "bytes": 456,
+      "stored_in_repository": false,
+      "sha256": "82ca20087ba0bf7b51f96c825b48615d03b8f654c532e586c41d1462763c04d0",
+      "url": "https://raw.githubusercontent.com/QEF/q-e/770a0b2d12928a67048e2f3da8d10d057e52179e/test-suite/epw_metal/save/pb.phsave/status_run.xml",
+      "source_path": "test-suite/epw_metal/save/pb.phsave/status_run.xml"
+    }
+  ],
+  "repository": "QEF/q-e",
+  "license": "GPL-2.0 (upstream License retained)",
+  "ref": "qe-7.5",
+  "retrieved_on": "2026-10-04",
+  "commit": "770a0b2d12928a67048e2f3da8d10d057e52179e"
+}
