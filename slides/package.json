@@ -5,6 +5,7 @@
   "description": "Original bilingual BCS and BdG teaching decks with speaker notes",
   "scripts": { "build": "node build_bcs_deck.js", "build:bdg": "node build_bdg_deck.js",
                "build:al-convergence": "node build_al_convergence_deck.js",
-               "build:epc": "node build_epc_deck.js" },
+               "build:epc": "node build_epc_deck.js",
+               "build:two-band": "node build_two_band_deck.js" },
   "dependencies": { "pptxgenjs": "4.0.1", "jszip": "3.10.1" }
 }

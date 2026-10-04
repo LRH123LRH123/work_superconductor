@@ -1,5 +1,14 @@
 # 超导理论与计算入门课件
 
+## 第五课：双带与各向异性 Eliashberg
+
+[20 页 PPTX](双带与各向异性Eliashberg入门.pptx) · [PDF](双带与各向异性Eliashberg入门.pdf) · [详细教程](../examples/07_two_band_eliashberg/双带与各向异性Eliashberg入门教程.md) · [已执行 Notebook](../examples/07_two_band_eliashberg/双带Eliashberg交互教程.ipynb)
+
+DOS 权重、加权互易、2N×2N 配对矩阵、连通分组初始化、单带极限和原文 Fig. 6(a) 目标。
+全部为原创示意/模型结果，不嵌入论文原图；每页有中文讲解备注。
+先在案例目录运行 `run_learning.py`，再在本目录执行 `npm run build:two-band`。
+验证记录见 [双带课件检查记录](双带与各向异性课件检查记录.md)。
+
 ## 第四课：EPC 与 Eliashberg
 
 [20 页 PPTX](电子声子耦合与Eliashberg计算入门.pptx) · [PDF](电子声子耦合与Eliashberg计算入门.pdf) · [详细教程](../examples/06_epc_eliashberg/电子声子耦合与Eliashberg入门教程.md) · [已执行 Notebook](../examples/06_epc_eliashberg/EPC与Eliashberg交互教程.ipynb)

@@ -8,6 +8,8 @@ Superconductivity: Theory, Computation and Literature Reproduction
 以及参考 HostBridge 在 IQ 集群完成的 **Al SCF + Γ 点 DFPT + ASR 冒烟测试、波函数截断能扫描和 k 网格 × 冷展宽交叉扫描**。
 金属积分学习包也配有中文教程、已执行 Notebook、14 页 PPTX/PDF 与原始日志。
 已保存输入、小型原始日志、版本和 JobID。新增 **EPC/Eliashberg 详细教程、代码、已执行 Notebook、20 页 PPTX/PDF 和 Pb 固定参数回归**。
+进一步提供 **双带与各向异性详细教程、19 项测试、8 格已执行 Notebook 和 20 页 PPTX/PDF**，
+并核对原文方程，选定 MgB₂ Fig. 6(a) 的虚轴能隙为首个原图任务。
 **尚未完成收敛的材料 Tc 预测或原论文定量图表复现。** 按当前学习安排，不再扩展密度、截断能或展宽扫描。
 
 ## 第一套学习包
@@ -69,6 +71,21 @@ Al 使用官方参考数字表，并非此前 SCF 生成的 EPC；Einstein 的�
 Pb 自己重跑 SCF/NSCF/EPW，但复用上游 DFPT，固定 3³→6³，无 SOC，不能作材料 Tc 结论。
 来源文件与许可单独保存；本轮不继续参数收敛扫描。
 
+## 第五套学习包
+
+| 材料 | 入口 | 完成状态 |
+|---|---|---|
+| 双带与各向异性教程 | [详细中文讲义](examples/07_two_band_eliashberg/双带与各向异性Eliashberg入门教程.md) | DOS、互易、折叠、分支、单带极限与练习答案 |
+| 代码与验证 | [双带案例](examples/07_two_band_eliashberg/README.md) | 19 项测试；独立正负频率及非线性解耦带验证 |
+| 交互练习 | [已执行 Notebook](examples/07_two_band_eliashberg/双带Eliashberg交互教程.ipynb) | 8 格已执行，不调用集群 |
+| 配套课件 | [20 页 PPTX](slides/双带与各向异性Eliashberg入门.pptx) / [PDF](slides/双带与各向异性Eliashberg入门.pdf) | 原创示意、结果图和中文讲解备注 |
+| 原文阅读 | [方程与原图对照](literature/各向异性Eliashberg方程与原图对照.md) | 核对作者 v1 页码/方程/图号，记录教学算法差异 |
+| 原图任务 | [MgB₂ Fig. 6(a)](reproductions/02_mgb2_imaginary_gap/README.md) | 已立项；缺少材料核/数字点集，尚未定量复现 |
+
+双带示范 λavg=0.904，有限模型 Tc≈10.09 K；同平均各向同性约 7.88 K。
+这些是原创模型，不是 MgB₂ 参数或材料预测；Δ(iw₀) 不是实轴能隙。
+本轮不提交新集群作业、不做新密度/能量/展宽扫描。下一步先获取原图目标的固定数据。
+
 ## 学习导航
 
 | 目标 | 入口 | 当前内容 |
@@ -97,6 +114,7 @@ examples/03_bdg_uniform/      固定均匀 s 波 BdG、LDOS 与解析验证
 examples/04_qe_al_cutoff/     Al 截断能扫描输入、原始日志与汇总
 examples/05_qe_al_kmesh_smearing/  Al 金属积分交叉扫描、教程与实测证据
 examples/06_epc_eliashberg/   EPC/Eliashberg 教程、模型求解、谱积分与 Pb 固定回归
+examples/07_two_band_eliashberg/  双带模型、各向异性方程、独立测试与 Notebook
 slides/                      中文课件、讲解备注与生成源代码
 resources/                   许可明确的教材副本及来源清单
 ```
@@ -121,8 +139,10 @@ resources/                   许可明确的教材副本及来源清单
 - [x] 完成均匀 s 波 BdG 谱、LDOS 与解析解的比较。
 - [x] 完成 EPC 谱矩、完整 Allen-Dynes 与有限 Einstein Eliashberg 模型学习包。
 - [x] 集群完成 Pb 官方小型固定参数回归，保留输入、谱、失败原因与成功状态。
-- [ ] 阅读各向异性方程，选定固定教程曲线或原始论文图表；不自动提交大型 Pb/MgB2 或收敛扫描。
+- [x] 核对各向异性方程，完成原创双带模型、独立验证及配套教程/Notebook/课件。
+- [x] 选定作者稿 Fig. 6(a)，建立虚轴 MgB₂ 原图任务与预设比较标准。
+- [ ] 取得材料核或作者数字点集并完成定量比较；不自动提交大型 MgB2 或收敛扫描。
 - [ ] 建立二维 Hubbard 模型的正常态易感率与配对通道练习。
-- [ ] 选定一篇原始论文和一个具体图/表，建立首个文献复现目录。
+- [ ] 完成首个原论文定量图表复现；目录立项与方程级学习不替代此项。
 
 整理日期：2026-10-04。原机制综述的文献检索范围见其文首说明。

@@ -1,0 +1,23 @@
+{
+  "review_date": "2026-10-04",
+  "original_materials": "Chinese teaching text, model, tests, notebook, figures and slides authored for this repository; no paper figures or upstream code copied",
+  "paper": {
+    "authors": ["E. R. Margine", "F. Giustino"],
+    "title": "Anisotropic Migdal-Eliashberg theory using Wannier functions",
+    "journal": "Physical Review B 87, 024505 (2013)",
+    "doi": "10.1103/PhysRevB.87.024505",
+    "publication_url": "https://doi.org/10.1103/PhysRevB.87.024505",
+    "read_version": "arXiv:1211.3345v1 (2012-11-14), 13 pages",
+    "read_url": "https://arxiv.org/abs/1211.3345v1",
+    "pdf_url": "https://arxiv.org/pdf/1211.3345v1",
+    "read_pdf_sha256": "01703e759102d01e44218ec65f03e1c05e35e224dc2844fa54361013db2ef237",
+    "locations_checked": ["p3 Eqs18,20", "p4 Eqs21-23", "p6 SecIII.B", "p10 Fig6(a), Fig6(b) caption"],
+    "redistributed": false,
+    "version_caveat": "Page, equation and figure numbering verified in author v1; not independently compared with publisher PDF"
+  },
+  "documentation": [
+    {"url": "https://docs.epw-code.org/Theory.html", "role": "Current formulation and conventions; mutable page, equation IDs are not pinned"},
+    {"url": "https://docs.epw-code.org/tutorials/tutorial_04/index.html", "role": "Pb/MgB2 learning route; no new cluster job or copied dataset in this package"}
+  ],
+  "reuse_policy": "Reading availability does not establish unrestricted redistribution. Link to paper and documentation; keep source PDF and QA page renders outside Git. Original model results are not author data or MgB2 fits."
+}

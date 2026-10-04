@@ -233,10 +233,15 @@ def main():
     check_extra_deck(locate("slides/电子声子耦合与Eliashberg计算入门.pptx"), 20, ns, problems)
     if not locate("slides/电子声子耦合与Eliashberg计算入门.pdf").read_bytes().startswith(b"%PDF-"):
         problems.append("Invalid EPC slide PDF")
+    from validate_two_band_package import validate_package as validate_two_band
+    problems.extend(validate_two_band(locate("examples/07_two_band_eliashberg")))
+    check_extra_deck(locate("slides/双带与各向异性Eliashberg入门.pptx"), 20, ns, problems)
+    if not locate("slides/双带与各向异性Eliashberg入门.pdf").read_bytes().startswith(b"%PDF-"):
+        problems.append("Invalid two-band slide PDF")
     if problems:
         raise SystemExit("\n".join(problems))
-    print("PASS: links, 29 executed notebook cells, BCS/BdG/Al/EPC numeric checks, "
-          "resource/cluster hashes, real job identities, LF inputs, 97 slides/notes and slide bounds.")
+    print("PASS: links, 37 executed notebook cells, BCS/BdG/Al/EPC/two-band numeric checks, "
+          "resource/cluster hashes, real job identities, LF inputs, 117 slides/notes and slide bounds.")
 
 
 if __name__ == "__main__":
