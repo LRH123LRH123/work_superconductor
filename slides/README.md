@@ -1,5 +1,15 @@
 # 超导理论与计算入门课件
 
+## 材料计算专题：Al 金属收敛
+
+[14 页 PPTX](Al金属k网格与展宽收敛入门.pptx) · [PDF](Al金属k网格与展宽收敛入门.pdf) · [详细教程](../examples/05_qe_al_kmesh_smearing/Al金属k网格与展宽收敛教程.md) · [实测记录](../examples/05_qe_al_kmesh_smearing/集群测试记录.md)
+
+12 组真实 SCF 的 k 网格–展宽交叉实验，解释 F/internal E/类熵项、同展宽有限参考和联合阈值。
+14 页均有中文讲解备注。失败判据保留为学习结果，不把参考自身零差称为已收敛。
+先在案例目录运行 collect_results.py，再在 slides 目录运行 npm run build:al-convergence。
+字体与依赖同下方两课，来源图由本仓库分析器生成。
+检查记录见 [Al 课件检查记录](Al金属收敛课件检查记录.md)。
+
 ## 第二课：BdG
 
 [30 页 PPTX](BdG超导理论与计算入门.pptx) · [PDF](BdG超导理论与计算入门.pdf) · [详细教程](../examples/03_bdg_uniform/BdG理论与计算入门教程.md) · [已执行 Notebook](../examples/03_bdg_uniform/BdG入门交互教程.ipynb)

@@ -1,0 +1,415 @@
+{
+  "rows": [
+    {
+      "id": "k08_s020",
+      "k_mesh": 8,
+      "degauss_Ry": 0.02,
+      "energy_Ry": -39.5030599,
+      "internal_energy_Ry": -39.5031007,
+      "minus_TS_Ry": 4.08e-05,
+      "fermi_eV": 7.8173,
+      "pressure_kbar": -8.13,
+      "scf_accuracy_Ry": 2.3e-11,
+      "iterations": 5,
+      "n_irreducible_k": 60,
+      "nbnd": 6,
+      "degauss_output_Ry": 0.02,
+      "band_warning_messages_total": 0,
+      "band_warning_messages_final_iteration": 0,
+      "energy_difference_meV_per_atom": -3.3619667706336633,
+      "abs_energy_difference_meV_per_atom": 3.3619667706336633,
+      "pressure_difference_kbar": -1.790000000000001,
+      "fermi_difference_eV": -0.02999999999999936,
+      "passes_joint_reference_test": false
+    },
+    {
+      "id": "k12_s020",
+      "k_mesh": 12,
+      "degauss_Ry": 0.02,
+      "energy_Ry": -39.50274868,
+      "internal_energy_Ry": -39.50251439,
+      "minus_TS_Ry": -0.00023429,
+      "fermi_eV": 7.8907,
+      "pressure_kbar": -6.25,
+      "scf_accuracy_Ry": 3.5e-11,
+      "iterations": 5,
+      "n_irreducible_k": 182,
+      "nbnd": 6,
+      "degauss_output_Ry": 0.02,
+      "band_warning_messages_total": 1,
+      "band_warning_messages_final_iteration": 0,
+      "energy_difference_meV_per_atom": 0.872397043013155,
+      "abs_energy_difference_meV_per_atom": 0.872397043013155,
+      "pressure_difference_kbar": 0.08999999999999986,
+      "fermi_difference_eV": 0.043400000000000105,
+      "passes_joint_reference_test": false
+    },
+    {
+      "id": "k16_s020",
+      "k_mesh": 16,
+      "degauss_Ry": 0.02,
+      "energy_Ry": -39.50273192,
+      "internal_energy_Ry": -39.50268397,
+      "minus_TS_Ry": -4.795e-05,
+      "fermi_eV": 7.8351,
+      "pressure_kbar": -5.82,
+      "scf_accuracy_Ry": 3.3e-11,
+      "iterations": 5,
+      "n_irreducible_k": 408,
+      "nbnd": 6,
+      "degauss_output_Ry": 0.02,
+      "band_warning_messages_total": 6,
+      "band_warning_messages_final_iteration": 0,
+      "energy_difference_meV_per_atom": 1.100428459770457,
+      "abs_energy_difference_meV_per_atom": 1.100428459770457,
+      "pressure_difference_kbar": 0.5199999999999996,
+      "fermi_difference_eV": -0.012199999999999989,
+      "passes_joint_reference_test": false
+    },
+    {
+      "id": "k20_s020",
+      "k_mesh": 20,
+      "degauss_Ry": 0.02,
+      "energy_Ry": -39.5028128,
+      "internal_energy_Ry": -39.50283165,
+      "minus_TS_Ry": 1.886e-05,
+      "fermi_eV": 7.8473,
+      "pressure_kbar": -6.34,
+      "scf_accuracy_Ry": 2.6e-11,
+      "iterations": 5,
+      "n_irreducible_k": 770,
+      "nbnd": 6,
+      "degauss_output_Ry": 0.02,
+      "band_warning_messages_total": 8,
+      "band_warning_messages_final_iteration": 0,
+      "energy_difference_meV_per_atom": 0.0,
+      "abs_energy_difference_meV_per_atom": 0.0,
+      "pressure_difference_kbar": 0.0,
+      "fermi_difference_eV": 0.0,
+      "passes_joint_reference_test": true
+    },
+    {
+      "id": "k08_s010",
+      "k_mesh": 8,
+      "degauss_Ry": 0.01,
+      "energy_Ry": -39.50305152,
+      "internal_energy_Ry": -39.50302923,
+      "minus_TS_Ry": -2.229e-05,
+      "fermi_eV": 7.8099,
+      "pressure_kbar": -8.34,
+      "scf_accuracy_Ry": 1.8e-11,
+      "iterations": 5,
+      "n_irreducible_k": 60,
+      "nbnd": 6,
+      "degauss_output_Ry": 0.01,
+      "band_warning_messages_total": 0,
+      "band_warning_messages_final_iteration": 0,
+      "energy_difference_meV_per_atom": -2.966721385480513,
+      "abs_energy_difference_meV_per_atom": 2.966721385480513,
+      "pressure_difference_kbar": -2.01,
+      "fermi_difference_eV": -0.03950000000000031,
+      "passes_joint_reference_test": false
+    },
+    {
+      "id": "k12_s010",
+      "k_mesh": 12,
+      "degauss_Ry": 0.01,
+      "energy_Ry": -39.50265774,
+      "internal_energy_Ry": -39.50263535,
+      "minus_TS_Ry": -2.239e-05,
+      "fermi_eV": 7.8825,
+      "pressure_kbar": -6.19,
+      "scf_accuracy_Ry": 3e-11,
+      "iterations": 5,
+      "n_irreducible_k": 182,
+      "nbnd": 6,
+      "degauss_output_Ry": 0.01,
+      "band_warning_messages_total": 1,
+      "band_warning_messages_final_iteration": 0,
+      "energy_difference_meV_per_atom": 2.3909284525344985,
+      "abs_energy_difference_meV_per_atom": 2.3909284525344985,
+      "pressure_difference_kbar": 0.13999999999999968,
+      "fermi_difference_eV": 0.03310000000000013,
+      "passes_joint_reference_test": false
+    },
+    {
+      "id": "k16_s010",
+      "k_mesh": 16,
+      "degauss_Ry": 0.01,
+      "energy_Ry": -39.50273334,
+      "internal_energy_Ry": -39.50275544,
+      "minus_TS_Ry": 2.21e-05,
+      "fermi_eV": 7.8257,
+      "pressure_kbar": -5.41,
+      "scf_accuracy_Ry": 3.4e-11,
+      "iterations": 5,
+      "n_irreducible_k": 408,
+      "nbnd": 6,
+      "degauss_output_Ry": 0.01,
+      "band_warning_messages_total": 6,
+      "band_warning_messages_final_iteration": 0,
+      "energy_difference_meV_per_atom": 1.362338052403553,
+      "abs_energy_difference_meV_per_atom": 1.362338052403553,
+      "pressure_difference_kbar": 0.9199999999999999,
+      "fermi_difference_eV": -0.023699999999999832,
+      "passes_joint_reference_test": false
+    },
+    {
+      "id": "k20_s010",
+      "k_mesh": 20,
+      "degauss_Ry": 0.01,
+      "energy_Ry": -39.50283347,
+      "internal_energy_Ry": -39.5028531,
+      "minus_TS_Ry": 1.962e-05,
+      "fermi_eV": 7.8494,
+      "pressure_kbar": -6.33,
+      "scf_accuracy_Ry": 2.7e-11,
+      "iterations": 5,
+      "n_irreducible_k": 770,
+      "nbnd": 6,
+      "degauss_output_Ry": 0.01,
+      "band_warning_messages_total": 8,
+      "band_warning_messages_final_iteration": 0,
+      "energy_difference_meV_per_atom": 0.0,
+      "abs_energy_difference_meV_per_atom": 0.0,
+      "pressure_difference_kbar": 0.0,
+      "fermi_difference_eV": 0.0,
+      "passes_joint_reference_test": true
+    },
+    {
+      "id": "k08_s005",
+      "k_mesh": 8,
+      "degauss_Ry": 0.005,
+      "energy_Ry": -39.50305821,
+      "internal_energy_Ry": -39.50309272,
+      "minus_TS_Ry": 3.451e-05,
+      "fermi_eV": 7.7946,
+      "pressure_kbar": -8.2,
+      "scf_accuracy_Ry": 1.1e-11,
+      "iterations": 5,
+      "n_irreducible_k": 60,
+      "nbnd": 6,
+      "degauss_output_Ry": 0.005,
+      "band_warning_messages_total": 0,
+      "band_warning_messages_final_iteration": 0,
+      "energy_difference_meV_per_atom": -2.958285855723018,
+      "abs_energy_difference_meV_per_atom": 2.958285855723018,
+      "pressure_difference_kbar": -2.129999999999999,
+      "fermi_difference_eV": -0.056700000000000195,
+      "passes_joint_reference_test": false
+    },
+    {
+      "id": "k12_s005",
+      "k_mesh": 12,
+      "degauss_Ry": 0.005,
+      "energy_Ry": -39.50267257,
+      "internal_energy_Ry": -39.50270357,
+      "minus_TS_Ry": 3.1e-05,
+      "fermi_eV": 7.8668,
+      "pressure_kbar": -6.4,
+      "scf_accuracy_Ry": 3.2e-11,
+      "iterations": 5,
+      "n_irreducible_k": 182,
+      "nbnd": 6,
+      "degauss_output_Ry": 0.005,
+      "band_warning_messages_total": 1,
+      "band_warning_messages_final_iteration": 0,
+      "energy_difference_meV_per_atom": 2.288613640194679,
+      "abs_energy_difference_meV_per_atom": 2.288613640194679,
+      "pressure_difference_kbar": -0.33000000000000007,
+      "fermi_difference_eV": 0.015499999999999403,
+      "passes_joint_reference_test": false
+    },
+    {
+      "id": "k16_s005",
+      "k_mesh": 16,
+      "degauss_Ry": 0.005,
+      "energy_Ry": -39.50274047,
+      "internal_energy_Ry": -39.50274822,
+      "minus_TS_Ry": 7.75e-06,
+      "fermi_eV": 7.824,
+      "pressure_kbar": -5.32,
+      "scf_accuracy_Ry": 3.4e-11,
+      "iterations": 5,
+      "n_irreducible_k": 408,
+      "nbnd": 6,
+      "degauss_output_Ry": 0.005,
+      "band_warning_messages_total": 6,
+      "band_warning_messages_final_iteration": 0,
+      "energy_difference_meV_per_atom": 1.3647870771749768,
+      "abs_energy_difference_meV_per_atom": 1.3647870771749768,
+      "pressure_difference_kbar": 0.75,
+      "fermi_difference_eV": -0.027300000000000324,
+      "passes_joint_reference_test": false
+    },
+    {
+      "id": "k20_s005",
+      "k_mesh": 20,
+      "degauss_Ry": 0.005,
+      "energy_Ry": -39.50284078,
+      "internal_energy_Ry": -39.50284662,
+      "minus_TS_Ry": 5.84e-06,
+      "fermi_eV": 7.8513,
+      "pressure_kbar": -6.07,
+      "scf_accuracy_Ry": 2.9e-11,
+      "iterations": 5,
+      "n_irreducible_k": 770,
+      "nbnd": 6,
+      "degauss_output_Ry": 0.005,
+      "band_warning_messages_total": 8,
+      "band_warning_messages_final_iteration": 0,
+      "energy_difference_meV_per_atom": 0.0,
+      "abs_energy_difference_meV_per_atom": 0.0,
+      "pressure_difference_kbar": 0.0,
+      "fermi_difference_eV": 0.0,
+      "passes_joint_reference_test": true
+    }
+  ],
+  "thresholds": {
+    "energy_meV_per_atom": 0.1,
+    "pressure_kbar": 0.1,
+    "fermi_eV": 0.005
+  },
+  "sigma_summaries": [
+    {
+      "degauss_Ry": 0.02,
+      "reference_k": 20,
+      "lowest_joint_acceptable_k": null
+    },
+    {
+      "degauss_Ry": 0.01,
+      "reference_k": 20,
+      "lowest_joint_acceptable_k": null
+    },
+    {
+      "degauss_Ry": 0.005,
+      "reference_k": 20,
+      "lowest_joint_acceptable_k": null
+    }
+  ],
+  "common_tested_k": null,
+  "reference_k": 20,
+  "sigma_sensitivity_at_max_k": {
+    "energy_span_meV_per_atom": 0.3806872935637699,
+    "internal_energy_span_meV_per_atom": 0.29184211756345463,
+    "pressure_span_kbar": 0.2699999999999996,
+    "fermi_span_eV": 0.004000000000000448,
+    "is_zero_smearing_error_estimate": false
+  },
+  "scope": "Same-sigma finite-k references only; not zero-smearing, phonon, EPC or Tc convergence",
+  "fixed_parameters": {
+    "ecutwfc_Ry": 60,
+    "ecutrho_Ry": 640,
+    "celldm1_bohr": 7.65339,
+    "nat": 1,
+    "nbnd": 6,
+    "smearing": "mv",
+    "conv_thr_Ry": 1e-10,
+    "k_shift": [
+      1,
+      1,
+      1
+    ],
+    "pseudopotential": "Al.pbe-n-kjpaw_psl.1.0.0.UPF"
+  },
+  "sha256": [
+    {
+      "path": "k08_s020/scf.in",
+      "sha256": "4a97be23e8c42b870c9950d58126249da9f8fe8869a348aca94450b4b8dab8f9"
+    },
+    {
+      "path": "k08_s020/output",
+      "sha256": "ba1d8e24c3eeb4bdc3c4d59529dc86add2f0cd50119ac9b38e6b05c775b85540"
+    },
+    {
+      "path": "k12_s020/scf.in",
+      "sha256": "b6ebbec626b2afa108d344f364284323a70c5c4358640c2dfb854e8301c011ef"
+    },
+    {
+      "path": "k12_s020/output",
+      "sha256": "64fbb295c25ee1ebaf6c0e1ea3237931da89fef835624c17798f2cb1efe94892"
+    },
+    {
+      "path": "k16_s020/scf.in",
+      "sha256": "f3c302bf447b171a44bdbd94890b96b5594ebbfa528aec7e0b91bcc1e4ceb4d7"
+    },
+    {
+      "path": "k16_s020/output",
+      "sha256": "c59113556b7453e149c936aca265a47deb1bc5b72191fc786a9ed36ba37a78e3"
+    },
+    {
+      "path": "k20_s020/scf.in",
+      "sha256": "73edc3a2f3730846550b89f5c1c09d46ebd192a0c28a7819edf61f7509afc56a"
+    },
+    {
+      "path": "k20_s020/output",
+      "sha256": "cb8fed9a0e054c215d9e58d6f64736b4b3f83a707cd9e56eb367dca587deece0"
+    },
+    {
+      "path": "k08_s010/scf.in",
+      "sha256": "e402631e41820ce45c08c6cf09aeb817ce24354a8ea547da3fce28407650c601"
+    },
+    {
+      "path": "k08_s010/output",
+      "sha256": "ebd459fea624c47d0a7a50312ae8c34c92346c8f497363df88db91e845d61165"
+    },
+    {
+      "path": "k12_s010/scf.in",
+      "sha256": "dd14ffad3c00bb7a513178c5ab61e764235ad052c6053548e49cbf5cc65eb595"
+    },
+    {
+      "path": "k12_s010/output",
+      "sha256": "3e62021348ee6eb62240ec7d2b866033b62d39d574605f050050e6f0e032da88"
+    },
+    {
+      "path": "k16_s010/scf.in",
+      "sha256": "0dbf30334f25017120b53fb40dcc012b37f56bd7ae685c40566d1682365ff200"
+    },
+    {
+      "path": "k16_s010/output",
+      "sha256": "04410e99c856a99188de3d4a0bb5f5298129e6a7df03c35f188c889cb71730d0"
+    },
+    {
+      "path": "k20_s010/scf.in",
+      "sha256": "ea0a2827bb9cf59b2a8b272d6fd8ec5e5814fa8218cda506c79e1855fb8d9ac0"
+    },
+    {
+      "path": "k20_s010/output",
+      "sha256": "34553a6616c1432f3cff61a7b843c226f3f21562199fda0953ed4a73f0e4ba99"
+    },
+    {
+      "path": "k08_s005/scf.in",
+      "sha256": "c2b33c8e81c8ef3faacf868b7e8d58a43c3e463c560c775730243f29457b44a0"
+    },
+    {
+      "path": "k08_s005/output",
+      "sha256": "c41806da9748c8a8a6affc2cb04e7617c247c463ff13ce2e2f65d33f83932f60"
+    },
+    {
+      "path": "k12_s005/scf.in",
+      "sha256": "6b532e2e9171320993ce50bf49ff48a90ae644a3a52e4e6278cb491571f138a0"
+    },
+    {
+      "path": "k12_s005/output",
+      "sha256": "6dec32671df6937b80fb517682a5cd75d8646d0b185c1481ae0bedeed56c0e6a"
+    },
+    {
+      "path": "k16_s005/scf.in",
+      "sha256": "22a7c5cfd022e61ee3e0f8cd5354fd21ad7c89770ef973f2cca40745743b8484"
+    },
+    {
+      "path": "k16_s005/output",
+      "sha256": "41e2d3a7b31ade50aebf5b27565469f9b12bb58b6913b0ffa2761ac28686d145"
+    },
+    {
+      "path": "k20_s005/scf.in",
+      "sha256": "bc5af7a7aefb7118825bd03e3768616bf910bd35d4a2d6ddf560846216847e1f"
+    },
+    {
+      "path": "k20_s005/output",
+      "sha256": "6222af9a1054cb56332710561baef573d920bed59c8dcab594733d2e3cd47690"
+    }
+  ],
+  "job_id": "313714",
+  "date": "2026-10-03"
+}

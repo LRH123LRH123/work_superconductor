@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "date": "2026-10-03",
+  "fixed_parameters": {
+    "ecutwfc_Ry": 60,
+    "ecutrho_Ry": 640,
+    "celldm1_bohr": 7.65339,
+    "nat": 1,
+    "nbnd": 6,
+    "smearing": "mv",
+    "conv_thr_Ry": 1e-10,
+    "k_shift": [
+      1,
+      1,
+      1
+    ],
+    "pseudopotential": "Al.pbe-n-kjpaw_psl.1.0.0.UPF"
+  },
+  "thresholds": {
+    "energy_meV_per_atom": 0.1,
+    "pressure_kbar": 0.1,
+    "fermi_eV": 0.005
+  },
+  "reference_k": 20,
+  "cases": [
+    {
+      "id": "k08_s020",
+      "k_mesh": 8,
+      "degauss_Ry": 0.02
+    },
+    {
+      "id": "k12_s020",
+      "k_mesh": 12,
+      "degauss_Ry": 0.02
+    },
+    {
+      "id": "k16_s020",
+      "k_mesh": 16,
+      "degauss_Ry": 0.02
+    },
+    {
+      "id": "k20_s020",
+      "k_mesh": 20,
+      "degauss_Ry": 0.02
+    },
+    {
+      "id": "k08_s010",
+      "k_mesh": 8,
+      "degauss_Ry": 0.01
+    },
+    {
+      "id": "k12_s010",
+      "k_mesh": 12,
+      "degauss_Ry": 0.01
+    },
+    {
+      "id": "k16_s010",
+      "k_mesh": 16,
+      "degauss_Ry": 0.01
+    },
+    {
+      "id": "k20_s010",
+      "k_mesh": 20,
+      "degauss_Ry": 0.01
+    },
+    {
+      "id": "k08_s005",
+      "k_mesh": 8,
+      "degauss_Ry": 0.005
+    },
+    {
+      "id": "k12_s005",
+      "k_mesh": 12,
+      "degauss_Ry": 0.005
+    },
+    {
+      "id": "k16_s005",
+      "k_mesh": 16,
+      "degauss_Ry": 0.005
+    },
+    {
+      "id": "k20_s005",
+      "k_mesh": 20,
+      "degauss_Ry": 0.005
+    }
+  ]
+}

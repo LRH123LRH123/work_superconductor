@@ -5,7 +5,8 @@ Superconductivity: Theory, Computation and Literature Reproduction
 本仓库用于积累超导体的理论学习笔记、计算方法、文献阅读记录与可复现案例。内容以中文为主，保留英文概念名称，覆盖声子介导与非声子候选机制，并逐步连接模型计算和真实材料计算。
 
 当前已有 **BCS 与 BdG 两套详细中文教程、Python、已执行 Notebook、配套 PPTX/PDF 和数值验证**，
-以及参考 HostBridge 在 IQ 集群完成的 **Al SCF + Γ 点 DFPT + ASR 冒烟测试与波函数截断能扫描**。
+以及参考 HostBridge 在 IQ 集群完成的 **Al SCF + Γ 点 DFPT + ASR 冒烟测试、波函数截断能扫描和 k 网格 × 冷展宽交叉扫描**。
+金属积分学习包也配有中文教程、已执行 Notebook、14 页 PPTX/PDF 与原始日志。
 已保存输入、小型原始日志、版本和 JobID。**尚未完成全 EPC/Tc 材料预测或原论文定量图表复现。**
 
 ## 第一套学习包
@@ -37,6 +38,20 @@ BdG 案例输入固定 Δ，不计算 Tc，也不是无自旋 Kitaev 链。
 Al 的 30 Ry 相对 80 Ry 总能差为 0.793 meV/原子，仅满足当前固定参数下的有限参考总能判据。
 **尚未完成 k 网格、展宽、ecutrho、有限 q 声子或 EPC/Tc 收敛。**
 
+## 第三套学习包
+
+| 材料 | 入口 | 完成状态 |
+|---|---|---|
+| 金属积分教程 | [Al 金属 k 网格与展宽收敛](examples/05_qe_al_kmesh_smearing/Al金属k网格与展宽收敛教程.md) | 费米面、单位、交叉设计、能量定义与联合判据 |
+| 代码与验证 | [Al 金属收敛案例](examples/05_qe_al_kmesh_smearing/README.md) | 8 项测试，原始日志可离线重新分析 |
+| 交互练习 | [Al 收敛 Notebook](examples/05_qe_al_kmesh_smearing/Al金属收敛交互教程.ipynb) | 6 个代码单元已执行 |
+| 配套课件 | [14 页 PPTX](slides/Al金属k网格与展宽收敛入门.pptx) / [PDF](slides/Al金属k网格与展宽收敛入门.pdf) | 每页有中文讲解备注 |
+| 集群实测 | [12 组扫描记录](examples/05_qe_al_kmesh_smearing/集群测试记录.md) | JobID 313714 已完成，27 个来源文件有校验值 |
+
+网格为 8³、12³、16³、20³，冷展宽为 0.020、0.010、0.005 Ry。
+**扫描已完成，但三个展宽平面均无通过预设联合阈值的非参考网格；不能宣称电子积分已收敛。**
+20³ 只是各展宽的有限参考。下一轮优先测试更密网格，再复核截断能、电荷密度截断和几何。
+
 ## 学习导航
 
 | 目标 | 入口 | 当前内容 |
@@ -63,6 +78,7 @@ examples/01_bcs_gap/          BCS 教程、代码、Notebook 与结果
 examples/02_qe_al_smoke/      Al SCF/Γ 声子/ASR 输入与实测记录
 examples/03_bdg_uniform/      固定均匀 s 波 BdG、LDOS 与解析验证
 examples/04_qe_al_cutoff/     Al 截断能扫描输入、原始日志与汇总
+examples/05_qe_al_kmesh_smearing/  Al 金属积分交叉扫描、教程与实测证据
 slides/                      中文课件、讲解备注与生成源代码
 resources/                   许可明确的教材副本及来源清单
 ```
@@ -82,7 +98,8 @@ resources/                   许可明确的教材副本及来源清单
 - [x] 完成 BCS 自洽能隙方程的温度扫描与弱耦合极限验证。
 - [x] 完成 Al SCF、Γ 点 DFPT 与 ASR 集群冒烟测试。
 - [x] 完成 Al ecutwfc 单变量扫描及有限参考总能误差分析。
-- [ ] 继续 Al k 网格、smearing、ecutrho 与几何验证，再转向有限 q。
+- [x] 完成 Al k 网格 × 冷展宽交叉实验及联合判据分析，诚实保留未通过结果。
+- [ ] 扩展更密 k 参考，完成 smearing、ecutrho 与几何验证，再转向有限 q。
 - [x] 完成均匀 s 波 BdG 谱、LDOS 与解析解的比较。
 - [ ] 按 EPW 官方教程开展 Pb/MgB2 计算，记录网格和展宽收敛。
 - [ ] 建立二维 Hubbard 模型的正常态易感率与配对通道练习。

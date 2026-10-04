@@ -10,3 +10,8 @@ examples/04_qe_al_cutoff/*.sh text eol=lf
 examples/04_qe_al_cutoff/ecut_*/*.in text eol=lf
 examples/04_qe_al_cutoff/ecut_*/output -text
 examples/04_qe_al_cutoff/results/* -text
+examples/05_qe_al_kmesh_smearing/*.sh text eol=lf
+examples/05_qe_al_kmesh_smearing/scan_plan.json text eol=lf
+examples/05_qe_al_kmesh_smearing/k*_s*/*.in text eol=lf
+examples/05_qe_al_kmesh_smearing/k*_s*/output -text
+examples/05_qe_al_kmesh_smearing/results/slurm-*.out -text

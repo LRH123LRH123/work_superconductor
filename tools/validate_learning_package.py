@@ -1,6 +1,7 @@
 """Check links, teaching outputs, notebook execution, source hashes and slide geometry."""
 import argparse
 import hashlib
+import importlib.util
 import json
 from pathlib import Path
 import re
@@ -13,6 +14,33 @@ import nbformat
 
 def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def check_extra_deck(path, count, ns, problems):
+    with zipfile.ZipFile(path) as z:
+        if z.testzip():
+            problems.append(f"ZIP checksum error: {path.name}")
+        slides = [n for n in z.namelist() if re.fullmatch(r"ppt/slides/slide\d+\.xml", n)]
+        notes = [n for n in z.namelist() if re.fullmatch(r"ppt/notesSlides/notesSlide\d+\.xml", n)]
+        if len(slides) != count or len(notes) != count:
+            problems.append(f"Slide/notes count mismatch: {path.name}")
+        size = ET.fromstring(z.read("ppt/presentation.xml")).find("p:sldSz", ns)
+        width, height = int(size.get("cx")), int(size.get("cy"))
+        for name in slides:
+            node = ET.fromstring(z.read(name))
+            for transform in node.findall(".//a:xfrm", ns):
+                offset, extent = transform.find("a:off", ns), transform.find("a:ext", ns)
+                if offset is None or extent is None:
+                    continue
+                x, y, w, h = int(offset.get("x")), int(offset.get("y")), int(extent.get("cx")), int(extent.get("cy"))
+                if min(x, y, w, h) < 0 or x+w > width+9144 or y+h > height+9144:
+                    problems.append(f"Off-canvas: {path.name} {name}")
+            for cell in node.findall(".//a:tcPr", ns):
+                if cell.get("anchor", "t") not in {"t", "ctr", "b", "just", "dist"}:
+                    problems.append(f"Invalid table anchor: {path.name} {name}")
+        for name in notes:
+            if sum(len(v.text or "") for v in ET.fromstring(z.read(name)).findall(".//a:t", ns)) < 80:
+                problems.append(f"Insufficient notes: {path.name} {name}")
 
 
 def main():
@@ -174,10 +202,36 @@ def main():
         pdf = locate(f"slides/{name}超导理论与计算入门.pdf")
         if not pdf.read_bytes().startswith(b"%PDF-"):
             problems.append(f"Invalid PDF: {pdf.name}")
+    metal = locate("examples/05_qe_al_kmesh_smearing")
+    record = json.loads((metal / "results/cluster_record.json").read_text(encoding="utf-8"))
+    for item in record["files"]:
+        source = metal / item["path"]
+        if digest(source) != item["sha256"] or source.stat().st_size != item["bytes"]:
+            problems.append(f"Metal scan source mismatch: {item['path']}")
+    spec = importlib.util.spec_from_file_location("al_metal_scan", metal / "collect_results.py")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    rebuilt = module.collect(metal)
+    saved = json.loads((metal / "results/validation.json").read_text(encoding="utf-8"))
+    if rebuilt != saved or saved["job_id"] != record["job_id"]:
+        problems.append("Metal scan report differs from raw sources/provenance")
+    notebook = nbformat.read(metal / "Al金属收敛交互教程.ipynb", as_version=4)
+    nbformat.validate(notebook)
+    cells = [c for c in notebook.cells if c.cell_type == "code"]
+    if len(cells) != 6 or any(c.execution_count is None for c in cells):
+        problems.append("Metal scan Notebook has unexecuted/missing code cells")
+    if any(o.output_type == "error" for c in cells for o in c.outputs):
+        problems.append("Metal scan Notebook contains errors")
+    for file in [metal / "submit.sh", metal / "scan_plan.json", *metal.glob("k*_s*/scf.in")]:
+        if b"\r" in file.read_bytes():
+            problems.append(f"Metal cluster input should use LF: {file.name}")
+    check_extra_deck(locate("slides/Al金属k网格与展宽收敛入门.pptx"), 14, ns, problems)
+    if not locate("slides/Al金属k网格与展宽收敛入门.pdf").read_bytes().startswith(b"%PDF-"):
+        problems.append("Invalid Al slide PDF")
     if problems:
         raise SystemExit("\n".join(problems))
-    print("PASS: links, 15 executed notebook cells, BCS/BdG numeric checks, "
-          "resource/cluster hashes, LF scripts, 63 slides/notes and slide bounds.")
+    print("PASS: links, 21 executed notebook cells, BCS/BdG/Al numeric checks, "
+          "resource/cluster hashes, LF inputs, 77 slides/notes and slide bounds.")
 
 
 if __name__ == "__main__":

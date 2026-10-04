@@ -1,0 +1,57 @@
+JobID=313714
+WorkDir=/home/runhan/work_superconductor_kmesh_20261003/05_qe_al_kmesh_smearing
+
+Currently Loaded Modules:
+  1) CCconfig                         14) ucx/1.14.1
+  2) gentoo/2023              (S)     15) libfabric/1.18.0
+  3) imkl/2023.2.0            (math)  16) pmix/4.2.4
+  4) StdEnv/2023              (S)     17) ucc/1.2.0
+  5) mii/1.1.2                        18) openmpi/4.1.5       (m)
+  6) slurm-completion/23.02.7         19) fftw/3.3.10         (math)
+  7) libcerf/2.4              (math)  20) fftw-mpi/3.3.10     (math)
+  8) qt/5.15.11               (t)     21) scalapack/2.2.0     (math)
+  9) gnuplot/5.4.8            (vis)   22) hdf5-mpi/1.14.2     (io)
+ 10) gcc/12.3                 (t)     23) elpa/2023.05.001    (math)
+ 11) flexiblas/3.3.1                  24) libxc/6.2.2         (chem)
+ 12) gcccore/.12.3            (H)     25) quantumespresso/7.5 (chem)
+ 13) hwloc/2.9.1
+
+  Where:
+   H:     Hidden Module
+   S:     Module is Sticky, requires --force to unload or purge
+   chem:  Chemistry libraries/apps / Logiciels de chimie
+   io:    Input/output software / Logiciel d'écriture/lecture
+   m:     MPI implementations / Implémentations MPI
+   math:  Mathematical libraries / Bibliothèques mathématiques
+   t:     Tools for development / Outils de développement
+   vis:   Visualisation software / Logiciels de visualisation
+
+ 
+
+/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/MPI/gcc12/openmpi4/quantumespresso/7.5/bin/pw.x
+fd7b78921e6d0939095b681c328732668eaefd1dee6882fdbc03be463550cc97  /home/runhan/apps/qesssp/Al.pbe-n-kjpaw_psl.1.0.0.UPF
+4a97be23e8c42b870c9950d58126249da9f8fe8869a348aca94450b4b8dab8f9  scf.in
+CASE_k08_s020_OK
+b6ebbec626b2afa108d344f364284323a70c5c4358640c2dfb854e8301c011ef  scf.in
+CASE_k12_s020_OK
+f3c302bf447b171a44bdbd94890b96b5594ebbfa528aec7e0b91bcc1e4ceb4d7  scf.in
+CASE_k16_s020_OK
+73edc3a2f3730846550b89f5c1c09d46ebd192a0c28a7819edf61f7509afc56a  scf.in
+CASE_k20_s020_OK
+e402631e41820ce45c08c6cf09aeb817ce24354a8ea547da3fce28407650c601  scf.in
+CASE_k08_s010_OK
+dd14ffad3c00bb7a513178c5ab61e764235ad052c6053548e49cbf5cc65eb595  scf.in
+CASE_k12_s010_OK
+0dbf30334f25017120b53fb40dcc012b37f56bd7ae685c40566d1682365ff200  scf.in
+CASE_k16_s010_OK
+ea0a2827bb9cf59b2a8b272d6fd8ec5e5814fa8218cda506c79e1855fb8d9ac0  scf.in
+CASE_k20_s010_OK
+c2b33c8e81c8ef3faacf868b7e8d58a43c3e463c560c775730243f29457b44a0  scf.in
+CASE_k08_s005_OK
+6b532e2e9171320993ce50bf49ff48a90ae644a3a52e4e6278cb491571f138a0  scf.in
+CASE_k12_s005_OK
+22a7c5cfd022e61ee3e0f8cd5354fd21ad7c89770ef973f2cca40745743b8484  scf.in
+CASE_k16_s005_OK
+bc5af7a7aefb7118825bd03e3768616bf910bd35d4a2d6ddf560846216847e1f  scf.in
+CASE_k20_s005_OK
+AL_KMESH_SMEARING_SCAN_OK
